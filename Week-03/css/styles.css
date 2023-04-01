@@ -1,0 +1,162 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+.blue-section {
+    background-color: #373867;
+    color: #f0f0f0;
+}
+.green-section {
+    background-color: #52c27f;
+    color: #f0f0f0;
+}
+.grey-section {
+    background-color: #d9d9d9;
+    color: #000;
+}
+header {
+    height: 159px;
+    width: 1512px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    text-align: right;
+    overflow: hidden;
+}
+header > h1 {
+  font-size: 25px;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+header > img {
+  height: 42px;
+  width: 206px;
+}
+#menu-icon {
+  height: 20px;
+  width: 20px;
+  float: left;
+  padding-left: 20px;
+}
+
+#menu {
+    margin-top: 0%;
+    padding: 2%;
+    border: 1px;
+    height: 427px;
+    width: 1068px;
+    display: none;
+  }
+#menu img {
+    height: 25px;
+    width: 25px;
+    float:inline-block;
+}
+
+#S-1{
+  column-count: 2;
+  box-sizing: border-box;
+  width: 1512px;
+  height: 471px;
+
+  }
+.tittle-section-1 {
+  width: 452px;
+  height: 53px;
+}
+.subtittle-section-1 {
+  width: 616px;
+  height: 38px;
+}
+.paragrapgh {
+  width: 1034px;
+  height: 247px;
+  line-height: 36px;
+  text-indent: 17px;
+}
+
+#s1-img {
+      height: 236px;
+      width: 267px;
+      float:right;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+
+#S-2{
+    width: 1512px;
+    height: 691px;
+    display: inline-block;
+    width: 100%;
+    column-count: 2;
+  }
+#S-2 h3{
+    width: 343px;
+    height: 67px;
+    border: 1px;
+    text-align: center;
+    border-style:solid;
+    border-color: #000;
+    border-radius: 5px;
+    background-color: #000 25%;
+  }
+#S-2 img {
+  height: 110px;
+  width: 110px;
+}
+#S-2 p{
+  border: 10px;
+}
+
+
+#S-3 h4 {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#S-4{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  }
+
+#History{
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+
+#S-4 p{
+  font-size: 20px;
+}
+
+  #S-5{
+    width: 100%;
+    column-count: 4;
+    column-gap: 20px;
+    box-sizing: border-box;
+  }
+
+footer {
+    color: #000;
+    text-align: left;
+    overflow: hidden;
+    /* display: inline-block; */
+  }
+ footer > p {
+    float: left;
+    top: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
+  } 
+footer > a > img {
+    /* background-color: #51A884;  */
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 5px;
+    float: right;
+  }
