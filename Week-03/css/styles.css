@@ -1,13 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
+
 body {
-  width: 1512px;
-  height: 2691px;
   font-family: 'Roboto', Arial, serif;
+  width: 1512px;
 }
 .blue-section {
   background-color: #373867;
@@ -24,19 +18,19 @@ body {
 /*----- Header----- */
 #header {
   height: 150px;
-  width: 380px;
+  /* width: 570px; */
   top: 0px;
   left: 0px;
   bottom: 0px;
   overflow: hidden;
-  display: inline-block;
+  /* display: inline-block; */
 }
 header > h1 {
   font-size: 25px;
   text-align: right;
+  float: right;
   padding-top: 40px;
-  padding-left: 172px;
-  display: inline-block;
+  padding-right: 50px;
 }
 header > img {
   height: 42px;
@@ -106,47 +100,42 @@ header > img {
 /* ----- Main start----- */
 
 #section-1 {
-  column-count: 2;
-  width: 930px;
-  height: 200px;
-  float: hidden;
-  display: inline-block;
+  height: 450px;
   }
 .text-section-1 {
   float: left;
   box-sizing: border-box;
-  padding-left: 15px;
+  padding-left: 14px;
 }
-.text-section > h2 {
-  font-size: 45px;
+.text-section-1 > h2 {
+  font-size: 25px;
 }
 .text-section-1 > h3 {
   font-size: 20px;
 }
 .text-section-1 > p {
-  text-indent: 20px;
-  font-size: 18px;
-  text-align: left;
+  font-size: 20px;
+  display: inline-block;
 }
 
-.img-section-1 {
-  height: 300px;
-  width: 300px;
-  float:right;
-  box-sizing: border-box;
-  padding-right: 10px;
-  /* margin-right: 10px; */
+.text-section-1 > img {
+  height: 200px;
+  width: 200px;
+  float: right;
+  display: inline-block;
+
 }
 
 #section-2 {
-  width: 930px;
-  height: 400px;
-  display: inline-block;
+  height: 500px;
   column-count: 2;
 }
-#section-2 h3{
-    width: 200px;
-    height: 60px;
+.options-section-2 {
+  display: inline-block;
+}
+.options-section-2 h3 {
+    width: 280px;
+    height: 50px;
     font-size: 20px;
     border: 1px;
     border-width: 2px;
@@ -156,20 +145,25 @@ header > img {
     background-color: #989898;
     border-radius: 5px;
     padding: 0px;
+    display: inline-block;
   }
-#section-2 p{
-  /* border: 10px; */
-  font-size: 15px;
+.options-section-2 p {
+   border: 10px;
+   font-size: 15px;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-#section-2 > img {
+.options-section-2 > img {
   padding-top: 10px;
   padding-left: 10px;
   height: 40px;
   width: 40px;
+  display: inline-block;
 }
 
 #section-3 {
-  width: 930px;
+  /* width: 380px; */
   height: 300px;
   overflow: hidden;
   /* display: inline-block; */
@@ -218,7 +212,7 @@ form {
 }
 
 #section-4{
-  width: 930px;
+  /* width: 380px; */
   height: 200px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -226,62 +220,59 @@ form {
 
 #History{
   text-transform: uppercase;
-  font-size: 30px;
-  padding-left: 50px;
+  font-size: 25px;
+  padding-left: 20px;
   }
 
 #section-4 p{
-  font-size: 20px;
-  text-indent: 10px;
-  padding-left: 50px;
+  font-size: 15px;
+  padding-left: 20px;
 }
 
 #section-5 {
-  width: 930px;
+  /* width: 380px; */
   height: 200px;
   column-count: 4;
-  overflow: hidden;
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: top;
-  font-size: 12px;
+  font-size: 10px;
   }
 .activities-list {
-  padding: 25px;
+  padding: 5px;
   box-sizing: border-box;
   }
 .black-membership-list {
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
   }
 .classic-membership-list {
-  padding: 25px;
+  padding: 5px;
   box-sizing: border-box;
   }
 .only-membership-list {
-  padding: 25px;
+  padding: 5px;
   box-sizing: border-box;
   }
 
 footer {
-  width: 930px;
   height: 100px;
   color: #000;
   text-align: left;
   overflow: hidden;
-  display: inline-block;
   }
 footer > p {
   float: left;
-  font-size: 20px;
-  width: 500px;
+  font-size: 12px;
+  width: 200px;
   height: 60px;
   top: 10px;
   padding-left: 10px;
   padding-top: 40px;
   } 
 footer > a > img {
-  height: 55px;
-  width: 55px;
-  padding: 10px;
+  height: 40px;
+  width: 40px;
+  padding-right: 5px;
+  padding-top: 10px;
   float: right;
   }
