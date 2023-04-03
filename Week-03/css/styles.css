@@ -7,6 +7,7 @@
 body {
   width: 1512px;
   height: 2691px;
+  font-family: 'Roboto', Arial, serif;
 }
 .blue-section {
   background-color: #373867;
@@ -52,21 +53,61 @@ header > img {
 /* -----Menu----- */
 #menu {
     margin-top: 0%;
-    padding: 2%;
+    padding: 2px;
     border: 1px;
-    height: 427px;
-    width: 1068px;
+    height: 550px;
+    width: 290px;
+    text-align: center;
+    box-sizing: border-box;
   }
-#menu > img {
-    height: 25px;
-    width: 25px;
-    float:inline-block;
+#menu nav ul li {
+    border: 1px #000 solid;
+    font-size: 15px;
+    padding: 10px 3px;
+    margin: 8px 93px;
+    width: 110px;
+    /* list-style: none; */
+    background-color: #49a37b;
+    text-align: center;
+    box-sizing: border-box;
 }
+.contact-menu {
+  height: 250px;
+  width: 230px;
+  border: 50px;
+  font-size: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #49a37b;
+  background-position: 20px;
+  border-style: solid 1px;
+  padding-left: 20px;
+  margin-left: 33px;
+  display: block;
+}
+.contact-menu h3{
+  text-align: center;
+}
+.contact-menu ul li {
+  font-size: 15px;
+  padding: 0px;
+  margin: 5px;
+  width: 188px;
+  float: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.img-menu {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
 /* ----- Main start----- */
 
 #section-1 {
   column-count: 2;
-  width: 380px;
+  width: 930px;
   height: 200px;
   float: hidden;
   display: inline-block;
