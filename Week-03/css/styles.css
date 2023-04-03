@@ -4,6 +4,10 @@
   border: 0;
   box-sizing: border-box;
 }
+body {
+  width: 1512px;
+  height: 2691px;
+}
 .blue-section {
   background-color: #373867;
   color: #f0f0f0;
@@ -17,29 +21,33 @@
   color: #000;
 }
 /*----- Header----- */
-header {
-  height: 159px;
-  width: 930px;
+#header {
+  height: 150px;
+  width: 380px;
   top: 0px;
   left: 0px;
   bottom: 0px;
   overflow: hidden;
+  display: inline-block;
 }
 header > h1 {
   font-size: 25px;
   text-align: right;
-  padding-top: 60px;
-  padding-right: 50px;
+  padding-top: 40px;
+  padding-left: 172px;
+  display: inline-block;
 }
 header > img {
   height: 42px;
   width: 20px;
 }
-#menu-icon {
+.menu-icon {
+  margin-top: 39px;
   width: 40px;
   height: 30px;
   float: left;
   padding-left: 20px;
+  padding-top: 4px;
 }
 /* -----Menu----- */
 #menu {
@@ -48,100 +56,137 @@ header > img {
     border: 1px;
     height: 427px;
     width: 1068px;
-    display: none;
   }
 #menu > img {
     height: 25px;
     width: 25px;
     float:inline-block;
 }
-/* ----- Main stat----- */
+/* ----- Main start----- */
 
 #section-1 {
-  /* column-count: 2; */
-  width: 1512px;
-  height: 471px;
-  text-align: left;
-  float: none;
+  column-count: 2;
+  width: 380px;
+  height: 200px;
+  float: hidden;
   display: inline-block;
   }
 .text-section-1 {
   float: left;
+  box-sizing: border-box;
+  padding-left: 15px;
 }
 .text-section > h2 {
-  font-size: 80px;
+  font-size: 45px;
 }
 .text-section-1 > h3 {
-  font-size: 40px;
+  font-size: 20px;
 }
 .text-section-1 > p {
-  text-indent: 17px;
-  font-size: 30px;
+  text-indent: 20px;
+  font-size: 18px;
+  text-align: left;
 }
 
 .img-section-1 {
-    height: 300px;
-    width: 300px;
-    float:right;
-    padding-right: 10px;
-    margin-right: 10px;
-    }
+  height: 300px;
+  width: 300px;
+  float:right;
+  box-sizing: border-box;
+  padding-right: 10px;
+  /* margin-right: 10px; */
+}
 
 #section-2 {
-    width: 1512px;
-    height: 691px;
-    display: inline-block;
-    column-count: 2;
-  }
+  width: 930px;
+  height: 400px;
+  display: inline-block;
+  column-count: 2;
+}
 #section-2 h3{
-    width: 343px;
-    height: 67px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
     border: 1px;
     border-width: 2px;
     text-align: center;
     border-style:solid;
     border-color: #000;
+    background-color: #989898;
     border-radius: 5px;
     padding: 0px;
-    margin: 5px;
   }
 #section-2 p{
-  border: 10px;
-  text-align: center;
+  /* border: 10px; */
+  font-size: 15px;
 }
-#section-2 img {
-  height: 60px;
-  width: 60px;
+#section-2 > img {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 40px;
+  width: 40px;
 }
-#Appointment-icon {
-  padding-top: 30px;
-  padding-left: 30px;
-}
+
 #section-3 {
   width: 930px;
-  height: 515px;
+  height: 300px;
+  overflow: hidden;
+  /* display: inline-block; */
+  column-count: 2;
 }
 
 #section-3 h4 {
   text-align: center;
-  font-family: ;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+form {
+
+}
+.left-form {
+  float: left;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.left-form > input select {
+  box-sizing: border-box;
+  padding: 15px;
+  /* margin: 15px; */
+  display:block;
+}
+ /* #motive {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+}  */
+.right-form {
+  float: right;
+  padding: 5px;
+}
+.right-form > textarea {
+  display: block;
+  box-sizing: border-box;
+}
+.right-form > input {
+  /* display: inline; */
+  box-sizing: border-box;
+  padding: 5px 30px;
+}
 
 #section-4{
   width: 930px;
   height: 200px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   }
 
 #History{
   text-transform: uppercase;
   font-size: 30px;
-  padding-left: 10px;
+  padding-left: 50px;
   }
 
 #section-4 p{
@@ -152,7 +197,7 @@ header > img {
 
 #section-5 {
   width: 930px;
-  height: 190px;
+  height: 200px;
   column-count: 4;
   overflow: hidden;
   display: inline-block;

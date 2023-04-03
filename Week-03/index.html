@@ -10,11 +10,11 @@
         <link rel="reset" href="/Week-03/css/reset.css">
     </head>
     <body>
-        <header class="blue-section">
+        <header class="blue-section" id="header">
             <h1 id="Landing">
                 MegaR<img src="/assets/images/Logo-rr1.jpg" alt="o">cket
             </h1>
-            <img src="/assets/images/menu.png" alt="menu-icon" id="menu-icon">
+            <img src="/assets/images/menu.png" alt="menu-icon" class="menu-icon">
         </header>
         <aside class="green-section" id="menu">
             <Nav>
@@ -80,7 +80,7 @@
                 </div>
             </section>
             <section class="green-section" id="section-2">
-                <img src="/assets/images/appointment.png" alt="Appointment-icon" id="Appointment-icon">
+                <img src="/assets/images/appointment.png" alt="Appointment-icon">
                 <h3>
                     Make an appointment
                 </h3>
@@ -88,7 +88,7 @@
                     Choose the membership plan that fits your lifestyle and fitness goals. From basic to premium, we have options 
                     for every budget and level of commitment.
                 </p>
-                <img src="/assets/images/membership.png" alt="Memberships-icon" id="Memberships-icon">
+                <img src="/assets/images/membership.png" alt="Memberships-icon">
                 <h3>
                     Our memberships
                 </h3>
@@ -96,7 +96,7 @@
                     Choose the membership plan that fits your lifestyle and fitness goals. From basic to premium, we have options 
                     for every budget and level of commitment.
                 </p>
-                <img src="/assets/images/member.png" alt="Member-icon" id="Member-icon">
+                <img src="/assets/images/member.png" alt="Member-icon">
                 <h3>
                     Become a member
                 </h3>
@@ -104,7 +104,7 @@
                     Join our fitness community and take advantage of all the perks of being a member.We offer a range of benefits
                     to help you reach your fitness potential.
                 </p>
-                <img src="/assets/images/suggestions.png" alt="Suggestions-icon" id="Suggestions-icon">
+                <img src="/assets/images/suggestions.png" alt="Suggestions-icon">
                 <h3>
                     Suggestions
                 </h3>
@@ -118,25 +118,31 @@
                     You have questions, ask away and get your answers
                 </h4>
                 <form>
-                    
-                    <input type="text" id="name" name="name" value="Complete your name">
-                    <input type="text" id="lname" name="lname" value="Complete your last name">
-                    <input type="email" id="mail" name="E-mail" value="Complete your e-mail">
-                        <select id="motive">
-                            <option value="membership">
-                                i want to know about membership and cost
-                            </option>
-                            <option value="Suggestions">
-                                i want to submit a suggestion/enquiry
-                            </option>
-                            <option value="Complain">
-                                i want to submit a complain
-                            </option>
-                        </select>
-                    <textarea name="textarea" rows="5" cols="20">Please write your message</textarea>
-                    <input type="submit" value="send">
-                    <input type="reset" value="clear">
-                </form>
+                    <div class="left-form">
+                        <input type="text" id="name" name="name" value="Complete your name">
+                        <input type="text" id="lname" name="lname" value="Complete your last name">
+                        <input type="email" id="mail" name="E-mail" value="Complete your e-mail">
+                            <select>
+                                <option value="motive">
+                                    Select your motive
+                                </option>
+                                <option value="membership">
+                                    i want to know about membership and cost
+                                </option>
+                                <option value="Suggestions">
+                                    i want to submit a suggestion/enquiry
+                                </option>
+                                <option value="Complain">
+                                    i want to submit a complain
+                                </option>
+                            </select>
+                    </div>
+                    <div class="right-form">
+                        <textarea name="textarea" rows="10" cols="30">Please write your message</textarea>
+                        <input type="submit" value="send">
+                        <input type="reset" value="clear">
+                    </div>
+                </form> 
             </section>
             <section class="green-section" id="section-4">
                 <h3 id="History">
