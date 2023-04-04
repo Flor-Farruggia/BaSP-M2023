@@ -3,6 +3,12 @@ body {
   font-family: 'Roboto', Arial, serif;
   width: 1512px;
 }
+footer {
+  height: 100px;
+  color: #000;
+  text-align: left;
+  overflow: hidden;
+  }
 .blue-section {
   background-color: #373867;
   color: #f0f0f0;
@@ -54,11 +60,11 @@ header > img {
     text-align: center;
     box-sizing: border-box;
   }
-#menu nav ul li {
+.menu nav ul li {
     border: 1px #000 solid;
     font-size: 15px;
-    padding: 10px 3px;
-    margin: 8px 93px;
+    padding: 8px 5px;
+    margin: 8px 80px;
     width: 110px;
     /* list-style: none; */
     background-color: #49a37b;
@@ -75,17 +81,17 @@ header > img {
   background-color: #49a37b;
   background-position: 20px;
   border-style: solid 1px;
-  padding-left: 20px;
-  margin-left: 33px;
+  padding-left: 0px;
+  margin-left: 30px;
   display: block;
 }
 .contact-menu h3{
   text-align: center;
 }
 .contact-menu ul li {
-  font-size: 15px;
+  font-size: 12px;
   padding: 0px;
-  margin: 5px;
+  margin: 0px;
   width: 188px;
   float: center;
   display: inline-block;
@@ -161,13 +167,11 @@ header > img {
   width: 40px;
   display: inline-block;
 }
-
-#section-3 {
-  /* width: 380px; */
-  height: 300px;
+form {
   overflow: hidden;
-  /* display: inline-block; */
-  column-count: 2;
+}
+#section-3 {
+  height: 500px;
 }
 
 #section-3 h4 {
@@ -176,39 +180,46 @@ header > img {
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-form {
-
+  margin: 0%;
+  font-size: 50px;
 }
 .left-form {
+  box-sizing: border-box;
+  padding-left: 25px;
   float: left;
-  box-sizing: border-box;
-  padding: 5px;
+  width: 50%;
 }
-.left-form > input select {
+.left-form > input , .left-form > select  {
   box-sizing: border-box;
-  padding: 15px;
-  /* margin: 15px; */
-  display:block;
-}
- /* #motive {
-  box-sizing: border-box;
+  float: left;
   padding: 10px;
-  margin: 10px;
-  display: block;
-}  */
+  margin: 20px;
+  width: 50%;
+}
+
 .right-form {
   float: right;
-  padding: 5px;
+  padding: 15px;
+  margin: 15px;
+  width: 40%;
 }
 .right-form > textarea {
-  display: block;
+  width: 600px;
+  height: 200px;
   box-sizing: border-box;
 }
-.right-form > input {
-  /* display: inline; */
+.right-form > button {
   box-sizing: border-box;
-  padding: 5px 30px;
+  float: right;
+  padding: 15px 66px;
+  margin-right: 101px;
+  margin-top: 40px;
+}
+.img-button {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-left: 2px;
 }
 
 #section-4{
@@ -220,59 +231,58 @@ form {
 
 #History{
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 40px;
   padding-left: 20px;
   }
 
 #section-4 p{
-  font-size: 15px;
+  font-size: 25px;
   padding-left: 20px;
 }
 
 #section-5 {
-  /* width: 380px; */
-  height: 200px;
+  height: 250px;
   column-count: 4;
-  /* display: inline-block; */
   vertical-align: top;
-  font-size: 10px;
+  font-size: 20px;
+  overflow: hidden;
   }
 .activities-list {
   padding: 5px;
   box-sizing: border-box;
+  display: inline-block;
   }
 .black-membership-list {
   padding: 5px;
   box-sizing: border-box;
+  display: inline-block;
   }
 .classic-membership-list {
   padding: 5px;
   box-sizing: border-box;
+  display: inline-block;
   }
 .only-membership-list {
   padding: 5px;
   box-sizing: border-box;
+  display: inline-block;
   }
 
-footer {
-  height: 100px;
-  color: #000;
-  text-align: left;
-  overflow: hidden;
-  }
+
 footer > p {
   float: left;
-  font-size: 12px;
-  width: 200px;
-  height: 60px;
+  font-size: 25px;
+  width: 700px;
+  height: 70px;
   top: 10px;
   padding-left: 10px;
-  padding-top: 40px;
+  padding-top: 15px;
+  margin: 0px;
   } 
 footer > a > img {
-  height: 40px;
-  width: 40px;
-  padding-right: 5px;
-  padding-top: 10px;
+  height: 44px;
+  width: 44px;
+  padding-right: 25px;
+  padding-top: 20px;
   float: right;
-  }
+}
