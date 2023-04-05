@@ -23,5 +23,14 @@ At the end of the body i put the footer which contains the paragraph about copyr
 >currently won't take you anywhere because the pages weren't created.
 
 ***
+## **Third Week working:**
+***
+This week we learn about css in order to put style in the html document, we work with the objective that the page stay in some measure parameters which mean that the design shouldn't be responsive, only in pixel perfect; but even if we focus in the css we also had to make changes in the html documentation. Just like in the last week we work with the support of pages like [w3schools](https://www.w3schools.com/html/default.asp) and [developer.mozilla](https://developer.mozilla.org/es/).
+## **Page content:**
+***
+In this stage what we do with css was to create the style of the pages witch mean that we add some global parameters such as width or the font of the page, then we add some general specification that we organized this parts in classes or id that we incorporated in the html document, in orde to give to this partss background-color or font color. We were able to give a font, colors, borders and even arrange in columns or add space between the differents containers and adapt the images to the size that is most convenient.
+
+Basically with the work of the second week we were able to create the base structure por the landing page, with this past week we were able to added style that is what will attract people to stay in the page and enjoy it. 
+***
 ## **Author:**
 Farruggia Florencia.
