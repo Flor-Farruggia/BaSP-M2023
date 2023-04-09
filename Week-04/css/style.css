@@ -1,0 +1,25 @@
+/*global part*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    /* width: 390px; */
+    margin: 0px;
+    padding: 0px;
+}
+.blue-section {
+    background-color: #35365C;
+    color: #f0f0f0;
+}
+.green-section {
+    background-color: #AACE9B;
+    color: #f0f0f0;
+}
+.grey-section {
+    background-color: #d9d9d9;
+    color: #000;
+}
+@media only screen and (min-width: 601px) {
+}
+@media only screen and (min-width: 1025px) {
+}
