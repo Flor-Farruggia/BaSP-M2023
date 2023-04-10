@@ -50,8 +50,8 @@ body {
     .menu-tittle {
         width: 90px;
         height: 33px;
-        margin-top: 0px;
-        margin-left: 140px;
+        margin-top: 0%;
+        margin-left: 38%;
         color: #000;
         font-size: 32px;
         text-transform: uppercase;
@@ -60,7 +60,8 @@ body {
         list-style: none;
         width: 260px;
         height: 64px;
-        margin: 23px;
+        margin-bottom: 5%;
+        margin-left: 10%;
         background-color: #51A884;
         color: #f0f0f0;
         border: 1px #000 solid;
@@ -70,13 +71,15 @@ body {
         text-transform: uppercase;
     }
     .contact-menu {
+        display: flex;
+        flex-direction: column;
         position: relative;
         height: 415px;
         width: 260px;
+        margin-left: 20%;
         border: 1px #000 solid;
         border-radius: 5px;
         background-color:  #51A884;
-        left: 60px;
     }
     .contact-menu h3 {
         align-items: center;
@@ -91,7 +94,8 @@ body {
     .contact-menu ul li {
         align-items: center;
         list-style: none;
-        padding: 10px;
+        margin-bottom: 15%;
+        margin-right: 15%;
         background-color:  #51A884;
         color: #f0f0f0;
         font-size: 20px;
@@ -108,8 +112,8 @@ body {
     .text-section-1 > h1 {
         width: 292px;
         height: 110px;
-        margin-top: 0px;
-        margin-left: 125px;
+        margin-top: 0%;
+        margin-left: 25%;
         font-family: 'Mulish';
         font-size: 40px;
         text-align: center;
@@ -118,7 +122,7 @@ body {
     .text-section-1 > h2 {
         width: 357px;
         height: 104px;
-        margin-left: 85px;
+        margin-left: 20%;
         font-weight: 600;
         font-size: 30px;
         text-align: center;
@@ -126,14 +130,14 @@ body {
     .paragraph-sect-1 {
         width: 371px;
         height: 270px;
-        margin-left: 85px;
+        margin-left: 20%;
         font-size: 20px;
         text-align: center;
     }
     .training-men {
         width: 249px;
         height: 268px;
-        margin-left: 125px;
+        margin-left: 25%;
     }
     .section-2 {
         height: 833px;
@@ -147,8 +151,8 @@ body {
     .appointment-info > h3 {
         width: 343px;
         height: 67px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0%;
+        margin-top: 0%;
         background-color: #989898;
         border: 1px;
         border-color: #000;
@@ -162,8 +166,8 @@ body {
     .membership-info > h3 {
         width: 343px;
         height: 67px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0%;
+        margin-top: 0%;
         border: 1px;
         border-color: #000;
         border-radius:5px;
@@ -177,8 +181,8 @@ body {
     .member-info > h3 {
         width: 343px;
         height: 67px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0%;
+        margin-top: 0%;
         background-color: #989898;
         border: 1px;
         border-color: #000;
@@ -193,8 +197,8 @@ body {
     .suggestion-info > h3 {
         width: 343px;
         height: 67px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0%;
+        margin-top: 0%;
         background-color: #989898;
         border: 1px;
         border-color: #000;
@@ -279,12 +283,14 @@ body {
     }
     .section-4 > h3 {
         text-transform: uppercase;
-        margin-top: 0px;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        padding-top: 5%;
         font-size: 50px;
         text-align: center;
     }
     .section-4 > p {
-        padding: 20px;
+        padding: 5%;
         font-size: 24px;
         text-align: justify;
     }
@@ -294,82 +300,85 @@ body {
         height: 571px;
     }
     .activities-list > h3 {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 4%;
+        margin-bottom: 2%;
         font-size: 30px;
         text-align: center;
     }
     .activities-list > ol {
         font-size: 16px;
         text-align: justify;
-        padding-left: 230px;
+        margin-left: 36%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     .black-membership-list > h4 {
-        margin-top: 0px;
-        margin-bottom: 10px;
+        margin-top: 0%;
+        margin-bottom: 2%;
         font-size: 20px;
         text-align: center;
     }
     .black-membership-list > ul {
-        margin: 0px;
+        margin: 0%;
     }
     .black-list-style {
         width: 282px;
         height: 120px;
-        margin-left: 50px;
-        font-size: 15px;
+        margin-left: 22%;
+        font-size: 16px;
         text-align: justify;
     }
     .classic-membership-list > h4 {
-        margin-top: 0px;
-        margin-bottom: 10px;
+        margin-top: 0%;
+        margin-bottom: 2%;
         font-size: 20px;
         text-align: center;
     }
     .classic-membership-list > ul {
-        margin: 0px;
+        margin: 0%;
     }
     .classic-list-style {
         width: 272px;
         height: 70px;
-        margin-left: 50px;
-        font-size: 15px;
+        margin-left: 22%;
+        font-size: 16px;
         text-align: justify;
     }
     .only-membership-list > h4 {
-        margin-top: 0px;
-        margin-bottom: 10px;
+        margin-top: 0%;
+        margin-bottom: 2%;
         font-size: 20px;
         text-align: center;
     }
     .only-membership-list > ul {
-        margin: 0px;
+        margin: 0%;
     }
     .only-list-style {
         width: 254px;
-        margin-left: 50px;
-        font-size: 15px;
+        margin-left: 22%;
+        font-size: 16px;
         text-align: justify;
     }
-    /*footer*/
+    /*-----footer------*/
     .footer {
         height: 83px;
         overflow: hidden;
     }
     .footer > p {
-        margin-top: 0px;
+        margin-top: 2%;
         color: #000;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
     }
     .footer > a > img {
         position: relative;
         width: 34px;
         height: 34px;
-        left: 230px;
+        margin-left: 2%;
+        left: 35%;
     }
 }
-/*other measures*/
+/*------other measure------*/
 @media only screen and (min-width: 600px) {
 }
 @media only screen and (min-width: 1024px) {
