@@ -29,15 +29,15 @@ body {
         float: right;
         width: 200px;
         height: 40px;
-        padding-right: 10px;
-        padding-top: 6px;
+        margin-right: 5%;
+        margin-top: 2%;
     }
     .menu-icon {
         float: left;
         width: 42px;
         height: 33px;
-        padding-left: 10px;
-        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 3%;
     }
     /*-----Menu-----*/
     .menu {
@@ -263,10 +263,30 @@ body {
         border-radius: 5px;
         color: #a4d1a4;
     }
-    .right-form > button {
+    /* .right-form > button {
         width: 90px;
         height: 38px;
         margin-left: 24%;
+        margin-top: 2%;
+        background-color: #51A884;
+        border-radius: 20px;
+        border-color: #000;
+        border-style: solid;
+    } */
+    .button-clear{
+        width: 90px;
+        height: 38px;
+        margin-left: 24%;
+        margin-top: 2%;
+        background-color: #51A884;
+        border-radius: 20px;
+        border-color: #000;
+        border-style: solid;
+    }
+    .button-send{
+        width: 90px;
+        height: 38px;
+        margin-left: 20%;
         margin-top: 2%;
         background-color: #51A884;
         border-radius: 20px;
@@ -380,6 +400,254 @@ body {
 }
 /*------other measure------*/
 @media only screen and (min-width: 600px) {
+    /*------header------*/
+    .header {
+        height: 169px;
+    }
+    .landing {
+        width: 206px;
+        height: 42px;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .menu-icon {
+        width: 76px;
+        height: 69px;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    /*------Main-----*/
+    .section-1 {
+        height: 367px;
+        display: flex;
+    }
+    .text-section-1 > h1 {
+        display: flex;
+        width: 461px;
+        height: 62px;
+        margin-left: 10%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 37px;
+    }
+    .text-section-1 > h2 {
+        width: 628px;
+        height: 44px;
+        margin-left: 10%;        
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 30px;
+    }
+    .paragraph-sect-1 {
+        width: 608px;
+        height: 237px;
+        margin-left: 10%;        
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 23px;
+    }
+    .training-men {
+        width: 184px;
+        height: 192px;
+        margin-top: 5%;
+    }
+    .section-2 {
+        height: 843px;
+        column-count: 2;
+    }
+    .section-2 > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 10%;
+    }
+    .appointment-info > h3 {
+        width: 343px;
+        height: 67px;
+        margin-left: 5%;
+        margin-top: 10%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .appointment-info > p {
+        display: flex;
+        width: 376px;
+        height: 202px;
+        margin-left: 5%;
+        margin-top: 10%;
+        font-size: 23px;
+    }
+    .membership-info > h3 {
+        width: 343px;
+        height: 67px;
+        margin-left: 5%;
+        margin-top: 10%;
+        text-align: center;
+        font-size: 30px;
+    } 
+    .membership-info > p {
+        display: flex;
+        width: 376px;
+        height: 202px;
+        margin-left: 5%;
+        margin-top: 10%;
+        font-size: 23px;
+    }
+    .member-info > h3 {
+        width: 343px;
+        height: 67px;
+        margin-left: 2%;
+        margin-right: 10%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .member-info > p {
+        display: flex;
+        width: 376px;
+        height: 202px;
+        margin-left: 10%;
+        font-size: 23px;
+    }
+    .suggestion-info > h3 {
+        width: 343px;
+        height: 67px;
+        margin-left: 5%;
+        margin-top: 10%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .suggestion-info > p {
+        display: flex;
+        width: 376px;
+        height: 202px;
+        margin-left: 5%;
+        font-size: 23px;
+    }
+    .option-2-img {
+        width: 90px;
+        height: 102px;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+
+
+
+    .section-3 {
+        display:flex;
+        flex-direction: column;
+        height: 481px;
+    }
+    .section-3 > h4 {
+        width: 730px;
+        margin-left: 20%;
+        margin-bottom: 0%;
+    }
+    .left-form input {
+        height: 29px;
+        margin-left: 40%;
+        margin-bottom: 1%;
+    }
+    .left-form > select {
+        margin-left: 40%;
+        margin-bottom: 1%;
+    }
+    .right-form > textarea {
+        height: 121px;
+        margin-left: 40%;
+        margin-bottom: 0%;
+    }
+    .button-clear {
+        margin-left: 40%;
+    }
+    .button-send{
+        margin-left: 10%;
+    }
+    .img-button {
+        width: 33px;
+        height: 33px;
+        margin-left: 1%;
+    }
+    .section-4 {
+        height: 239px;
+    }
+    .section-4 > h3 {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 5%;
+        padding: 0%;
+    }
+    .section-4 > p {
+        width: 782px;
+        height: 102px;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        margin-left: 22%;
+        margin-right: 10%;
+        padding: 0%;
+    }
+    .section-5 {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+    .activities-list > h3 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-size: 42px;
+    }
+    .activities-list > ol {
+        font-size: 40px;
+    }
+    .black-membership-list > h4 {
+        font-size: 26px;
+    }
+    .black-membership-list > ul {
+        font-size: 26px;
+    }
+    .black-list-style {
+        width: 640px;
+        height: 150px;
+        font-size: 26px;
+    }
+    .classic-membership-list > h4 {
+        font-size: 26px;
+    }
+    .classic-membership-list > ul {
+        font-size: 26px;
+    }
+    .classic-list-style {
+        width: 564px;
+        height: 120px;
+        font-size: 26px;
+    }
+    .only-membership-list > h4 {
+        font-size: 26px;
+    }
+    .only-membership-list > ul {
+        font-size: 26px;
+    }
+    .only-list-style {
+        width: 623px;
+        height: 90px;
+        font-size: 26px;
+    }
+    /*-----footer------*/
+    .footer {
+        height: 85px;
+        overflow: hidden;
+    }
+    .footer > p {
+        margin-top: 1%;
+    }
+    .footer > a > img {
+        position: relative;
+        width: 34px;
+        height: 34px;
+        margin-left: 2%;
+        left: 40%;
+    }
 }
 @media only screen and (min-width: 1024px) {
 }
