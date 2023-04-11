@@ -41,7 +41,7 @@ body {
     }
     /*-----Menu-----*/
     .menu {
-        /* display: none; */
+        display: none;
         width: 390px;
         height: 844px;
         background-color: #DCEEE6;
@@ -139,16 +139,13 @@ body {
         height: 268px;
         margin-left: 25%;
     }
-    .section-2 {
-        height: 833px;
-    }
     .section-2 > div {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    .info > h3 {
+    .info h3 {
         width: 343px;
         height: 67px;
         margin-bottom: 0%;
@@ -160,54 +157,7 @@ body {
         border-style: solid;
         font-size: 30px;
     }
-    .info > p {
-        display: none;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-bottom: 0%;
-        margin-top: 0%;
-        border: 1px;
-        border-color: #000;
-        border-radius:5px;
-        border-style: solid;
-        background-color: #989898;
-        font-size: 30px;
-    } 
-    .info > p {
-        display: none;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-bottom: 0%;
-        margin-top: 0%;
-        background-color: #989898;
-        border: 1px;
-        border-color: #000;
-        border-radius:5px;
-        border-style: solid;
-        text-align: center;
-        font-size: 30px;
-    }
-    .info > p {
-        display: none;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-bottom: 0%;
-        margin-top: 0%;
-        background-color: #989898;
-        border: 1px;
-        border-color: #000;
-        border-radius:5px;
-        border-style: solid;
-        text-align: center;
-        font-size: 30px;
-    }
-    .info > p {
+    .info p {
         display: none;
     }
     .option-2-img {
@@ -307,7 +257,6 @@ body {
     .section-5 {
         display: flex;
         flex-direction: column;
-        height: 571px;
     }
     .activities-list > h3 {
         margin-top: 4%;
@@ -322,49 +271,18 @@ body {
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    .black-membership-list > h4 {
+    .membership-list > h4 {
         margin-top: 0%;
         margin-bottom: 2%;
         font-size: 20px;
         text-align: center;
     }
-    .black-membership-list > ul {
+    .membership-list > ul {
         margin: 0%;
     }
-    .black-list-style {
+    .list-style {
         width: 282px;
         height: 120px;
-        margin-left: 22%;
-        font-size: 16px;
-        text-align: justify;
-    }
-    .classic-membership-list > h4 {
-        margin-top: 0%;
-        margin-bottom: 2%;
-        font-size: 20px;
-        text-align: center;
-    }
-    .classic-membership-list > ul {
-        margin: 0%;
-    }
-    .classic-list-style {
-        width: 272px;
-        height: 70px;
-        margin-left: 22%;
-        font-size: 16px;
-        text-align: justify;
-    }
-    .only-membership-list > h4 {
-        margin-top: 0%;
-        margin-bottom: 2%;
-        font-size: 20px;
-        text-align: center;
-    }
-    .only-membership-list > ul {
-        margin: 0%;
-    }
-    .only-list-style {
-        width: 254px;
         margin-left: 22%;
         font-size: 16px;
         text-align: justify;
@@ -390,6 +308,9 @@ body {
 }
 /*------other measure------*/
 @media only screen and (min-width: 600px) {
+    body {
+        width: 100%;
+    }
     /*------header------*/
     .header {
         height: 169px;
@@ -405,6 +326,9 @@ body {
         height: 69px;
         margin-top: 5%;
         margin-left: 5%;
+    }
+    .menu {
+        display: none;
     }
     /*------Main-----*/
     .section-1 {
@@ -442,8 +366,9 @@ body {
         margin-top: 5%;
     }
     .section-2 {
-        height: 843px;
         column-count: 2;
+        display: flex;
+        flex-flow: wrap;
     }
     .section-2 > div {
         display: flex;
@@ -451,6 +376,7 @@ body {
         flex-wrap: wrap;
         align-content: center;
         margin-left: 10%;
+        width: 40%;
     }
     .info > h3 {
         width: 343px;
@@ -466,52 +392,6 @@ body {
         height: 202px;
         margin-left: 5%;
         margin-top: 10%;
-        font-size: 23px;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-left: 5%;
-        margin-top: 10%;
-        text-align: center;
-        font-size: 30px;
-    } 
-    .info > p {
-        display: flex;
-        width: 376px;
-        height: 202px;
-        margin-left: 5%;
-        margin-top: 10%;
-        font-size: 23px;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-left: 2%;
-        margin-right: 10%;
-        text-align: center;
-        font-size: 30px;
-    }
-    .info > p {
-        display: flex;
-        width: 376px;
-        height: 202px;
-        margin-left: 10%;
-        font-size: 23px;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-left: 5%;
-        margin-top: 10%;
-        text-align: center;
-        font-size: 30px;
-    }
-    .info > p {
-        display: flex;
-        width: 376px;
-        height: 202px;
-        margin-left: 5%;
         font-size: 23px;
     }
     .option-2-img {
@@ -576,7 +456,6 @@ body {
     .section-5 {
         display: flex;
         flex-direction: column;
-        height: 900px;
     }
     .activities-list > h3 {
         margin-top: 1%;
@@ -586,37 +465,15 @@ body {
     .activities-list > ol {
         font-size: 40px;
     }
-    .black-membership-list > h4 {
+    .membership-list > h4 {
         font-size: 26px;
     }
-    .black-membership-list > ul {
+    .membership-list > ul {
         font-size: 26px;
     }
-    .black-list-style {
+    .list-style {
         width: 640px;
         height: 150px;
-        font-size: 26px;
-    }
-    .classic-membership-list > h4 {
-        font-size: 26px;
-    }
-    .classic-membership-list > ul {
-        font-size: 26px;
-    }
-    .classic-list-style {
-        width: 564px;
-        height: 120px;
-        font-size: 26px;
-    }
-    .only-membership-list > h4 {
-        font-size: 26px;
-    }
-    .only-membership-list > ul {
-        font-size: 26px;
-    }
-    .only-list-style {
-        width: 623px;
-        height: 90px;
         font-size: 26px;
     }
     /*-----footer------*/
@@ -648,6 +505,7 @@ body {
     }
     /*-----Menu-----*/
     .menu {
+        display: block;
         position: absolute;
         width: 427px;
         height: 1068px;
@@ -730,14 +588,15 @@ body {
         align-content: center;
         margin-left: 10%;
     }
-    .info {
-        width: 30%;
+    div.info {
+        width: 40%;
         display: flex;
         flex-flow: column;
     }
     .tittle {
         display: flex;
         justify-content: flex-start;
+        width: 100%;
     }
     .info div h3 {
         width: 343px;
@@ -748,55 +607,10 @@ body {
         font-size: 30px;
     }
     .info > p {
-        width: 376px;
+        width: 100%;
         height: 202px;
         margin-left: 5%;
         margin-top: 10%;
-        font-size: 23px;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-left: 5%;
-        margin-top: 10%;
-        text-align: center;
-        font-size: 30px;
-    } 
-    .info > p {
-        width: 376px;
-        height: 202px;
-        margin-left: 5%;
-        margin-top: 10%;
-        font-size: 23px;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-left: 2%;
-        margin-right: 10%;
-        text-align: center;
-        font-size: 30px;
-    }
-    .info > p {
-        display: flex;
-        width: 376px;
-        height: 202px;
-        margin-left: 10%;
-        font-size: 23px;
-    }
-    .info > h3 {
-        width: 343px;
-        height: 67px;
-        margin-left: 5%;
-        margin-top: 10%;
-        text-align: center;
-        font-size: 30px;
-    }
-    .info > p {
-        display: flex;
-        width: 376px;
-        height: 202px;
-        margin-left: 5%;
         font-size: 23px;
     }
     .option-2-img {
@@ -893,96 +707,42 @@ body {
     .section-5 {
         position: relative;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 627px;
+        flex-flow: row wrap;
         left: 427px;
     }
+    .activities-list {
+        width: 40%;
+    }
     .activities-list > h3 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         width: 70%;
-        height: 74px;
-        margin-top: 5%;
-        margin-bottom: 1%;
-        margin-left: 20%;
+        margin: 8% 0% 1% 15%;
         padding: 2px 100px;
         font-size: 50px;
-        border: #000 1px;
-        border-style: solid;
+        border: #000 1px solid;
         border-radius: 5px;
     }
     .activities-list > ol {
+        width: 60%;
         font-size: 40px;
     }
-    .black-membership-list > h4 {
+    .membership-list {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .membership-list > h4 {
         width: 70%;
         height: 74px;
-        margin-top: 5%;
-        margin-bottom: 1%;
-        margin-left: 20%;
+        margin: 5% 0% 1% 30%;
         padding: 2px 100px;
         font-size: 50px;
-        border: #000 1px;
-        border-style: solid;
+        border: #000 1px solid;
         border-radius: 5px;
     }
-    .black-membership-list > ul {
-        font-size: 26px;
-    }
-    .black-list-style {
-        width: 640px;
-        height: 150px;
-        font-size: 36px;
-    }
-    .classic-membership-list > h4 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .list-style {
         width: 100%;
-        height: 74px;
-        margin-top: 5%;
-        margin-bottom: 1%;
-        margin-left: 20%;
-        padding: 2px 100px;
-        font-size: 50px;
-        border: #000 1px;
-        border-style: solid;
-        border-radius: 5px;
-    }
-    .classic-membership-list > ul {
-        font-size: 26px;
-    }
-    .classic-list-style {
-        width: 564px;
-        height: 120px;
-        font-size: 36px;
-    }
-    .only-membership-list > h4 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 70%;
-        height: 74px;
-        margin-top: 5%;
-        margin-bottom: 1%;
-        margin-left: 20%;
-        padding: 2px 100px;
-        font-size: 50px;
-        border: #000 1px;
-        border-style: solid;
-        border-radius: 5px;
-    }
-    .only-membership-list > ul {
-        font-size: 26px;
-    }
-    .only-list-style {
-        width: 623px;
-        height: 90px;
         font-size: 36px;
     }
     /*-----footer------*/
