@@ -32,5 +32,11 @@ In this stage what we do with css was to create the style of the pages witch mea
 
 Basically with the work of the second week we were able to create the base structure por the landing page, with this past week we were able to added style that is what will attract people to stay in the page and enjoy it. 
 ***
+## **Fourth Week Working:**
+***
+This week we learn about responsive develop using tools like flexbox and media queries. First we had flexbox which is used for organized the components and containers, secondlywe had the media queries that are used to change the propoerties of the components when in the moment you change the size of the device you are using. Just like in the other weeks we work with the support of pages and the material.
+## **page content:**
+In this moment what we acomplish to created a website who is responsive to different measures, we try to keep the most similar design from the original in figma and we stablish a start point from the model of mobile first, then we were adding the difference with the media queries.
+***
 ## **Author:**
 Farruggia Florencia.
