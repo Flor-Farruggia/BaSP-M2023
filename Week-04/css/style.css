@@ -144,6 +144,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding-left: 2%;
     }
     .info h3 {
         width: 343px;
@@ -163,6 +164,7 @@ body {
     .option-2-img {
         width: 108px;
         height: 108px;
+        margin-left: 20%;
     }
     .section-3 {
         display:flex;
