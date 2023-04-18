@@ -351,8 +351,6 @@ body {
         font-size: 30px;
     }
     .text-section-1 > p {
-        width: 608px;
-        height: 237px;
         margin-left: 10%;        
         margin-top: 0%;
         margin-bottom: 0%;
@@ -505,6 +503,7 @@ body {
     .header {
         position: relative;
         height: 159px;
+        left: 427px;
     }
     .landing {
         width: 240px;
@@ -631,21 +630,23 @@ body {
     }
     .section-3 {
         position: relative;
-        display:flex;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         height: 766px;
         left: 427px;
     }
     .section-3 > h4 {
         width: 997px;
-        height: 140px;
         text-align: center;
-        font-size: 60px;
+        font-size: 50px;
+    }
+    form {
+        width: 100%;
     }
     .left-form {
         display: inline-flex;
         flex-direction: column;
-        width: 40%;
     }
     .left-form input {
         width: 420px;
@@ -665,6 +666,7 @@ body {
         display: inline-flex;
         flex-direction: column;
         width: 40%;
+        margin-left: 10%;
     }
     .right-form > textarea {
         width: 500px;
@@ -697,6 +699,8 @@ body {
         position: relative;
         height: 670px;
         left: 427px;
+        display: flex;
+        flex-direction: column;
     }
     .section-4 > h3 {
         width: 380px;
@@ -706,10 +710,10 @@ body {
         font-size: 60px;
     }
     .section-4 > p {
-        width: 1200px;
+        width: 80%;
         height: 354px;
-        margin-left: 10%;
-        margin-top: 5%;
+        margin-left: 5%;
+        margin-top: 2%;
         font-size: 60px;
         line-height: 59px;
     }
