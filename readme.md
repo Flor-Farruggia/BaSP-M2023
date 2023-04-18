@@ -38,5 +38,9 @@ This week we learn about responsive develop using tools like flexbox and media q
 ## **page content:**
 In this moment what we acomplish to created a website who is responsive to different measures, we try to keep the most similar design from the original in figma and we stablish a start point from the model of mobile first, then we were adding the difference with the media queries.
 ***
+## **Fifth Week Working:**
+***
+This week we learn about the different programming languages, we focused on JavaScript which is a lightly typed language, we were given a series of exercises to put into practice the knowledge acquired from the material. The exercises were divided into six sections, these were developed in six js files indexed to an empty html document, first the exercise about variables and operators, the second exercise was about strings, the third about arrays, the fourth about the if-else loop, the fifth about for loop and the sixth was about functions. Like in the past weeks we worked with the videos provided in the asynchronous material. And for other side we continue the changes in the css document with the correction of the feedback, trying to perfect and fix the page.
+***
 ## **Author:**
 Farruggia Florencia.
