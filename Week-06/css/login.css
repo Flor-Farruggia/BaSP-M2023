@@ -1,129 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
 /*-----Main-----*/
 .main {
-    background: #E3E6F2;
-    display: flex;
-    flex-direction: column;
+  background: #e3e6f2;
+  display: flex;
+  flex-direction: column;
 }
 .main-draw {
-    background-color: #ffffff;
-    width: 452px;
-    height: 505px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    color: #000;
+  background-color: #ffffff;
+  width: 452px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: #000;
+}
+.home-icon {
+  display: flex;
+  align-self: flex-start;
 }
 #home-page {
-    align-self: flex-start;
-    width: 30px;
-    height: 30px;
-    border: #b7b7b7 1px;
-    border-style: groove;
-    border-radius: 10%;
+  width: 30px;
+  height: 30px;
+  border: #b7b7b7 1px;
+  border-style: groove;
+  border-radius: 10%;
 }
 .main-draw > h1 {
-    text-align: center;
-    width: 115px;
-    height: 44px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    color: #2C8008;
+  text-align: center;
+  width: 115px;
+  height: 44px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #2c8008;
 }
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
 }
 .mail-form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-self: center;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
 .mail-form > input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom:  #AACE9B 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #aace9b 2px solid;
 }
 .password-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 .password-form > input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom:  #AACE9B 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #aace9b 2px solid;
 }
 .img-form {
-    height: 15px;
-    width: 15px;
+  height: 15px;
+  width: 15px;
 }
 .password-form > p {
-    font-size: 12px;
+  font-size: 12px;
 }
 .forgot-pass {
-    width: 212px;
-    height: 16px;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    color: #4362D0;
-    align-self: center;
-    margin-left: 5%;
-    margin-top: 3%;
-} 
+  width: 212px;
+  height: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #4362d0;
+  align-self: center;
+  margin-left: 5%;
+  margin-top: 3%;
+}
 .checkbox-remember {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    right: 15%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 15%;
 }
 .checkbox-remember > label {
-    font-size: 12px;
+  font-size: 12px;
 }
 .no-account {
-    margin-top: 5%;
-    margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 .no-account > p {
-    font-size: 12px;
-    padding: 0%;
-    text-align: center;
+  font-size: 12px;
+  padding: 0%;
+  text-align: center;
 }
 .member-link {
-    color: #1921EE;
+  color: #1921ee;
 }
 .loginButton {
-    align-self: center;
-    text-align: center;
-    width: 290px;
-    height: 48px;
-    background: #AACE9B;
-    border-radius: 8px;
-    color:#f0f0f0;
-    font-size: 16px;
+  align-self: center;
+  text-align: center;
+  width: 290px;
+  height: 48px;
+  background: #aace9b;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-size: 16px;
 }
 /*------other measure------*/
 @media only screen and (min-width: 1024px) {
-    .header {
-        left: 0px;
-    }
+  .header {
+    left: 0px;
+  }
 }
