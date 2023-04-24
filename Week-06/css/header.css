@@ -91,6 +91,12 @@ body {
   width: 30px;
   height: 30px;
 }
+.sign-up-header {
+  color: #ffffff;
+}
+.login-header {
+  color: #ffffff;
+}
 /*------other measure------*/
 @media only screen and (min-width: 600px) {
   body {
@@ -179,5 +185,8 @@ body {
     align-content: start;
     width: 66px;
     height: 66px;
+  }
+  .sign-log {
+    display: none;
   }
 }

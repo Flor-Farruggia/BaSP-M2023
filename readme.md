@@ -42,5 +42,11 @@ In this moment what we acomplish to created a website who is responsive to diffe
 ***
 This week we learn about the different programming languages, we focused on JavaScript which is a lightly typed language, we were given a series of exercises to put into practice the knowledge acquired from the material. The exercises were divided into six sections, these were developed in six js files indexed to an empty html document, first the exercise about variables and operators, the second exercise was about strings, the third about arrays, the fourth about the if-else loop, the fifth about for loop and the sixth was about functions. Like in the past weeks we worked with the videos provided in the asynchronous material. And for other side we continue the changes in the css document with the correction of the feedback, trying to perfect and fix the page.
 ***
+## **sixth week of work:**
+***
+During this week we were learning about what is the DOM (acronyms refer to Document Object Model) we saw the different ways to select elements so that we could create validations and events, Knowledge that will make our resolution of the problematic easier.
+## **Page content:**
+At this point we have a landing page that contains style and structure with css and html, so the idea of this week's work was to add two pages to which we can connect the index, being the login and sign up The next step in the problematic was to create these pages interactively, so that you could go from one page to another and back, in the same way with the forms in which the user is able to enter their data and through a series of validations the inputs will remain green if they are valid or red in case of being invalid, the validity of these will be based on a series of parameters that have been added to a pdf document of 'Requirements' and the validation itself is done in the javascript docs.
+***
 ## **Author:**
 Farruggia Florencia.
