@@ -124,6 +124,16 @@ body {
   color: #f0f0f0;
   font-size: 16px;
 }
+.correctBorder {
+  display: none;
+  border-color: #48bf04;
+}
+.errorBorder {
+  border-color: #951818;
+}
+.correct {
+  display: none;
+}
 /*------other measure------*/
 @media only screen and (min-width: 1024px) {
   .header {

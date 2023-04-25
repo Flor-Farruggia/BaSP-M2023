@@ -67,7 +67,7 @@ body {
 .img-form {
   border-radius: 50%;
 }
-.buttonRegister {
+#buttonRegister {
   align-self: center;
   height: 60px;
   width: 200px;
@@ -75,6 +75,13 @@ body {
   background-color: #aace9b;
   color: #ffffff;
   border-radius: 5px;
+}
+.correctBorder {
+  border-color: #48bf04 solid 5px;
+}
+.errorBorder {
+  border-color: #951818 solid 5px;
+  color: #951818;
 }
 /*------other measure------*/
 @media only screen and (min-width: 1024px) {
@@ -87,4 +94,8 @@ body {
     justify-content: space-between;
     width: 80%;
   }
+}
+
+.error {
+  border-color: #fa1313 1px;
 }

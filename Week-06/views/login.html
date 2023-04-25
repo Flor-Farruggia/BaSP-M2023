@@ -22,7 +22,7 @@
                 <h1>
                     Sign in
                 </h1>
-                <form class="form" method="">
+                <form class="form">
                     <div class="mail-form">
                         <img src="../../assets/images/envelope.png" alt="Email-icon" class="img-form">
                         <input type="text" id="email" name="email" placeholder="Complete your e-mail">
@@ -30,6 +30,7 @@
                     <div class="password-form">
                         <img src="../../assets/images/padlock.png" alt="padlock-icon" class="img-form">
                         <input type="password" id="password" name="password" placeholder="Input your password" >
+                        <span class='correct' id="passwordError">invalid password</span>
                         <a href="" class="forgot-pass">
                             Have you forgot your password?
                         </a>
@@ -47,7 +48,7 @@
                         </a>
                     </div>
                     <button type="submit" id="loginButton" class="loginButton">Login</button>
-                </form> 
+                </form>
             </div>
         </main>
         <script src="../js/login.js"></script>

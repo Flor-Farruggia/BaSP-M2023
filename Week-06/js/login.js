@@ -1,114 +1,85 @@
-/**Validation: */
-// console.log ('hola');
+/*************Email****************/
+var emailError = document.createElement("div");
+var inputEmail = document.getElementById("email");
+var passwordError = document.createElement("div");
 
-var email = document.getElementById('email');
-email.addEventListener('keyup', isEmail);
+ inputEmail.addEventListener("blur", function() {
+    valMail (inputEmail.value);
+})
+function valMail (email) {
+    var regex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
 
-function isEmail(e) {
-    var text = e.target.value;
-    var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    var result = emailExpression.test(text);
-    return console.log(result);
+    if (regex.test(email)) {
+
+    } else {
+        inputEmail.classList.add("errorBorder");
+        inputEmail.parentNode.insertBefore(emailError, inputEmail.nextSibling);
+        emailError.textContent = "e-mail is invalid";
+    }
+}
+inputEmail.onfocus = function () {
+    inputEmail.classList.remove("errorBorder");
+    emailError.textContent = "";
 }
 
-function haveInteger(string) {
-    var chars = [];
-    for (var i = 0; i < string.length; i++) {
-        chars.push(parseInt(string[i]));
-    }
-    for (var i = 0; i < chars.length; i++) {
-        if (!Number.isInteger(chars[i])) {
-        } else {
-            return true;
+/*************Password****************/
+
+var inputPassword = document.getElementById("password");
+var passwordError = document.createElement("div");
+inputPassword.onblur = function () {
+    var password = inputPassword.value;
+    var capitalLetter = false;
+    var smallLetter = false;
+    var NumberChar = false;
+    for (var i = 0; i < password.length; i++) {
+        var char = password.charAt(i);
+        if (char >= "0" && char <= "9") {
+        NumberChar = true;
+        } else if (char === char.toUpperCase()) {
+        capitalLetter = true;
+        } else if (char === char.toLowerCase()) {
+        smallLetter = true;
         }
     }
-}
-
-var password = document.getElementById('password');
-password.addEventListener('keyup', isPassword);
-
-function isPassword(e) {
-    var text = e.target.value;
-    if (text.indexOf(' ') == -1 && text.toUpperCase() != text.toLowerCase() && haveInteger(text) && text.length >= 8) {
-        return console.log(true);
-    } else {
-        return console.log(false);
+    if (!capitalLetter || !smallLetter || !NumberChar) {
+        passwordError.textContent ="Invalid. Must contain at least one capital letter, one lowercase and one number.";
+        passwordError.classList.add("errorBorder");
+        inputPassword.parentNode.insertBefore(passwordError, inputPassword.nextSibling);
+        return false;
     }
-}
+    if (password.length < 5) {
+        passwordError.textContent ="Invalid Password. You need at least 8 characters (one capital letter, one lowercase and one number)";
+        passwordError.classList.add("errorBorder");
+        inputPassword.parentNode.insertBefore(passwordError, inputPassword.nextSibling);
+        return false;
+    }
+    if (capitalLetter && smallLetter && NumberChar && password.length >=5 ) {
+        passwordError.textContent = "";
+        return true;
+    }
+    };
+    inputPassword.onfocus = function () {
+    passwordError.classList.remove ("errorBorder");
+    passwordError.textContent = "";
+    };
+/*************Login button****************/
 
+var loginButton = document.getElementById("loginButton");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//EMAIL VALIDATION
-// var emailVal= document.getElementById('email');
-// var emailRegex = /^[^@]+@[^@]+.[a-zA-Z]{2,}$/;
-
-// function validationEmail() {
-//   if (emailRegex.test(emailVal.value)) {
-//     console.log('ok');
-//   } else {
-//     emailVal.classList.add('xError');
-//   }
-// }
-// emailVal.addEventListener('blur', validationEmail);
-
-// function removeEmailAlert() {
-
-//     emailVal.classList.remove('xError');
-// }
-// emailVal.addEventListener('focus', removeEmailAlert);
-
-// //PASSWORD VALIDATION
-// var passwordVal = document.getElementById('password');
-// var passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).+$/;
-
-// function validationPassword() {
-//   if (passwordVal.value.length <= 5) {
-//     passwordVal.classList.add('xError');
-//   }
-// }
-// passwordVal.addEventListener('blur', validationPassword)
-
-// function removePasswordAlert() {
-//     passwordVal.classList.remove('xError');
-// }
-
-// passwordVal.addEventListener('focus', removePasswordAlert);
-
-// /*******BUTTON*******/
-// var buttonLogin = document.getElementById('loginButton');
-
-// function validationLogin() {
-//   if (validationEmail === true && validationPassword === true) {
-//     return alert('welcome');
-//   } else {
-//     alert('email or password is wrong');
-//   }
-// }
-// buttonLogin.addEventListener('onclick', validationLogin);
+loginButton.addEventListener("click", function() {
+    if ((inputEmail.value.trim().length !== 0) && (inputPassword.value.trim().length !== 0)) {
+        if ((emailError.textContent  == "") && ( passwordError.textContent == "")) {
+            alert("Email: " + inputEmail.value + "\n" + "Password: " + inputPassword.value)
+        } else {
+            if ((emailError.textContent !== "") && ( passwordError.textContent !== "")){
+                alert("* Email and Password invalid")
+            }else if (emailError.textContent !== ""){
+                alert("* Email invalid")
+            }else if ( passwordError.textContent !== ""){
+                alert("* Password invalid")
+            }
+        }
+    }else{
+        alert("* Please complete all the fields")
+    }
+});
