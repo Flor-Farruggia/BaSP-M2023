@@ -95,29 +95,37 @@ function validateDni(dni) {
     inputDni.classList.add("correctBorder");
   }
 /***********Birthdate Validation: *****************/
-var dateInput = document.getElementById ("bDate");
+var dateInput = document.getElementById("bDate");
 var dateError = document.createElement("div");
-dateInput.addEventListener ('blur', function(){
-    var dateValue = dateInput.value;
-    var year = dateValue.substring(0,4);
-    var month = dateValue.substring(5,7);
-    var day = dateValue.substring (8,10);
-    var dd = validateDate (day,1,31,numbers);
-    var mm = validateDate (month,1,12,numbers);
-    var yyyy = validateDate (year,1953,2007,numbers);
-    if (dd && mm && yyyy) {
-        dateError.textContent = "";
-        return true
+dateInput.addEventListener("blur", function() {
+  function validateDate(num, min, max, acceptedChars) {
+    for (var i = 0; i < num.length; i++) {
+      if (acceptedChars.indexOf(num.charAt(i)) === -1) {
+        return false;
+      }
     }
-    else {
-        dateError.textContent = "Invalid. Your are too young or too old.";
-        dateError.classList.add("errorBorder");
-        return false
-    }
-})
-dateInput.addEventListener("focus", function () {
+    var value = parseInt(num, 10);
+    return !isNaN(value) && value >= min && value <= max;
+  }
+  var dateValue = dateInput.value;
+  var year = dateValue.substring(0, 4);
+  var month = dateValue.substring(5, 7);
+  var day = dateValue.substring(8, 10);
+  var yyyy = validateDate(year, 1953, 2007, "0123456789");
+  var mm = validateDate(month, 1, 12, "0123456789");
+  var dd = validateDate(day, 1, 31, "0123456789");
+  if (yyyy && mm && dd) {
     dateError.textContent = "";
-    dateError.classList.remove("errorBorder");
+    return true;
+  } else {
+    dateError.textContent = "Invalid. Please enter a valid date of birth.";
+    dateError.classList.add("errorBorder");
+    return false;
+  }
+});
+dateInput.addEventListener("focus", function() {
+  dateError.textContent = "";
+  dateError.classList.remove("errorBorder");
 });
 /***********Telephone Validation: *****************/
 var inputTel = document.getElementById("tel");
@@ -186,8 +194,6 @@ function valLocation(location) {
     locationError.classList.remove("errorBorder");
     locationError.textContent = "";
   }
-
-
 /***********Postal Validation: *****************/
 var postalCodeError = document.createElement("div");
 var postalCodeInput = document.getElementById("postalCode");
@@ -239,7 +245,7 @@ function validateAddress(address) {
     return true;
   } else {
     addressError.textContent = "Invalid Address. Must contain at least 5 characters, with numbers, letters and a space between them";
-    inputAddress.classList.add("errorBorder");
+    addressError.classList.add("errorBorder");
     inputAddress.parentNode.insertBefore(addressError, inputAddress.nextSibling);
     return false;
   }
@@ -335,13 +341,13 @@ var repeatPassword = inputRepeat.value;
   };
 /***********Button: *****************/
 var registerButton = document.getElementById("buttonRegister");
-
 registerButton.addEventListener("click", function() {
-    alert('Name: ' + inputName.value + ' ' +
+    alert('the entered data is: '+
+            'Name: ' + inputName.value + ' ' +
             'Last name: ' + inputLname.value + ' ' +
             'Dni: ' + inputDni.value + ' ' +
             'Birth date: ' + dateInput.value + ' ' +
-            'Telephone number: ' + inputTel.value + ' ' +
+            'Telephone: ' + inputTel.value + ' ' +
             'Address: ' + inputAddress.value + ' ' +
             'Location: ' + inputLocation.value + ' ' +
             'Postal code: ' + postalCodeInput .value + ' ' +
