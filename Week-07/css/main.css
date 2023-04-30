@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.blue-section {
+  background-color: #35365c;
+  color: #f0f0f0;
+}
+.green-section {
+  background-color: #aace9b;
+  color: #f0f0f0;
+}
+.grey-section {
+  background-color: #d9d9d9;
+  color: #000;
+}
+/*------Main-----*/
+.section-1 {
+  display: flex;
+  flex-direction: column;
+}
+.text-section-1 > h1 {
+  width: 292px;
+  height: 110px;
+  margin-top: 0%;
+  margin-left: 25%;
+  font-family: "Mulish";
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.text-section-1 > h2 {
+  width: 357px;
+  height: 104px;
+  margin-left: 20%;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+.text-section-1 > p {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 20px;
+  text-align: center;
+}
+.img-training {
+  width: 249px;
+  height: 268px;
+  margin-left: 25%;
+}
+.section-2 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info h3 {
+  width: 343px;
+  height: 67px;
+  margin-bottom: 5%;
+  margin-top: 0%;
+  background-color: #989898;
+  border: 1px;
+  border-color: #000;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 30px;
+}
+.info p {
+  display: none;
+}
+.option-2-img {
+  width: 108px;
+  height: 108px;
+  margin-left: 30%;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  height: 556px;
+}
+.section-3 > h4 {
+  height: 65px;
+  width: 312px;
+  margin-top: 0px;
+  margin-left: 25%;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.left-form input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 312px;
+  height: 34px;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+.left-form > select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 319px;
+  height: 36px;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  color: #a4d1a4;
+}
+::placeholder {
+  color: #a4d1a4;
+}
+.right-form > textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 312px;
+  height: 123px;
+  margin-left: 25%;
+  margin-bottom: 2%px;
+  border-radius: 5px;
+  color: #a4d1a4;
+}
+.button-clear {
+  width: 90px;
+  height: 38px;
+  margin-left: 24%;
+  margin-top: 2%;
+  background-color: #51a884;
+  border-radius: 20px;
+  border-color: #000;
+  border-style: solid;
+}
+.button-send {
+  width: 90px;
+  height: 38px;
+  margin-left: 20%;
+  margin-top: 2%;
+  background-color: #51a884;
+  border-radius: 20px;
+  border-color: #000;
+  border-style: solid;
+}
+.img-button {
+  width: 20px;
+  height: 16px;
+  margin-left: 1%;
+}
+.section-4 {
+  height: 385px;
+}
+.section-4 > h3 {
+  text-transform: uppercase;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  font-size: 50px;
+  text-align: center;
+}
+.section-4 > p {
+  padding: 5%;
+  font-size: 24px;
+  text-align: justify;
+}
+.section-5 {
+  display: flex;
+  flex-direction: column;
+}
+.activities-list > h3 {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-size: 30px;
+  text-align: center;
+}
+.activities-list > ol {
+  font-size: 16px;
+  text-align: justify;
+  margin-left: 36%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.membership-list > h4 {
+  margin-top: 0%;
+  margin-bottom: 2%;
+  font-size: 20px;
+  text-align: center;
+}
+.membership-list > ul {
+  margin: 0%;
+}
+.list-style {
+  width: 282px;
+  height: 120px;
+  margin-left: 22%;
+  font-size: 16px;
+  text-align: justify;
+}
+/*------other measure------*/
+@media only screen and (min-width: 600px) {
+  body {
+    width: 100%;
+  }
+  /*------Main-----*/
+  .section-1 {
+    display: flex;
+  }
+  .text-section-1 > h1 {
+    display: flex;
+    width: 461px;
+    height: 62px;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 37px;
+  }
+  .text-section-1 > h2 {
+    width: 628px;
+    height: 44px;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 30px;
+  }
+  .text-section-1 > p {
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 23px;
+  }
+  .img-training {
+    width: 184px;
+    height: 192px;
+    margin-top: 5%;
+  }
+  .section-2 {
+    column-count: 2;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .section-2 > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 10%;
+    width: 40%;
+  }
+  .info > h3 {
+    width: 343px;
+    height: 67px;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .info > p {
+    display: flex;
+    width: 376px;
+    height: 202px;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-size: 23px;
+  }
+  .option-2-img {
+    width: 90px;
+    height: 102px;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    height: 481px;
+  }
+  .section-3 > h4 {
+    width: 730px;
+    margin-left: 20%;
+    margin-bottom: 0%;
+  }
+  .left-form input {
+    height: 29px;
+    margin-left: 40%;
+    margin-bottom: 1%;
+  }
+  .left-form > select {
+    margin-left: 40%;
+    margin-bottom: 1%;
+  }
+  .right-form > textarea {
+    height: 121px;
+    margin-left: 40%;
+    margin-bottom: 0%;
+  }
+  .button-clear {
+    margin-left: 40%;
+  }
+  .button-send {
+    margin-left: 10%;
+  }
+  .img-button {
+    width: 33px;
+    height: 33px;
+    margin-left: 1%;
+  }
+  .section-4 {
+    height: 239px;
+  }
+  .section-4 > h3 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    padding: 0%;
+  }
+  .section-4 > p {
+    width: 782px;
+    height: 102px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: 22%;
+    margin-right: 10%;
+    padding: 0%;
+  }
+  .section-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  .activities-list > h3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 42px;
+  }
+  .activities-list > ol {
+    font-size: 40px;
+  }
+  .membership-list > h4 {
+    font-size: 26px;
+  }
+  .membership-list > ul {
+    font-size: 26px;
+  }
+  .list-style {
+    width: 640px;
+    height: 150px;
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    left: 427px;
+    flex-direction: column;
+  }
+  /*------Main-----*/
+  .section-1 {
+    position: relative;
+    height: 567px;
+    left: 427px;
+    display: flex;
+    flex-direction: row;
+  }
+  .text-section-1 > h1 {
+    position: relative;
+    width: 452px;
+    height: 53px;
+    margin-left: 5%;
+    font-size: 42px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .text-section-1 > h2 {
+    width: 616px;
+    height: 38px;
+    margin-left: 5%;
+    font-size: 32px;
+  }
+  .text-section-1 p {
+    margin-left: 5%;
+    font-size: 28px;
+    text-align: justify;
+  }
+  .img-training {
+    width: 396px;
+    margin-left: 3%;
+    margin-top: 10%;
+  }
+  .section-2 {
+    position: relative;
+    column-count: 2;
+    height: 1004px;
+    left: 427px;
+  }
+  .section-2 > div {
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    margin-left: 10%;
+  }
+  div.info {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+  }
+  .tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .info div h3 {
+    width: 343px;
+    height: 67px;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .info > p {
+    height: 202px;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-size: 23px;
+  }
+  .option-2-img {
+    width: 110px;
+    height: 120px;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  .section-3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 766px;
+    left: 427px;
+  }
+  .section-3 > h4 {
+    width: 997px;
+    text-align: center;
+    font-size: 50px;
+  }
+  form {
+    width: 100%;
+  }
+  .left-form {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .left-form input {
+    width: 420px;
+    height: 50px;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  .left-form > select {
+    width: 425px;
+    height: 50px;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  .right-form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 10%;
+  }
+  .right-form > textarea {
+    width: 500px;
+    height: 342px;
+    margin-left: 20%;
+    margin-bottom: 0%;
+  }
+  .button-pack {
+    display: flex;
+    flex-direction: row;
+  }
+  .button-clear {
+    margin-left: 20%;
+    width: 151px;
+    height: 70px;
+    font-size: 36px;
+  }
+  .button-send {
+    margin-left: 20%;
+    width: 151px;
+    height: 70px;
+    font-size: 36px;
+  }
+  .img-button {
+    width: 40px;
+    height: 40px;
+    margin-left: 0%;
+  }
+  .section-4 {
+    position: relative;
+    height: 670px;
+    left: 427px;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-4 > h3 {
+    width: 380px;
+    height: 59px;
+    margin-left: 8%;
+    padding: 2%;
+    font-size: 60px;
+  }
+  .section-4 > p {
+    width: 80%;
+    height: 354px;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 60px;
+    line-height: 59px;
+  }
+  .section-5 {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    left: 427px;
+  }
+  .activities-list {
+    width: 40%;
+  }
+  .activities-list > h3 {
+    margin: 8% 0% 1% 1%;
+    padding: 2px 80px;
+    font-size: 48px;
+    border: #000 1px solid;
+    border-radius: 5px;
+  }
+  .activities-list > ol {
+    width: 60%;
+    font-size: 26px;
+  }
+  .membership-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+  .membership-list > h4 {
+    margin: 5% 0% 1% 2%;
+    padding: 2px 100px;
+    font-size: 30px;
+    border: #000 1px solid;
+    border-radius: 5px;
+  }
+  .list-style {
+    width: 100%;
+    font-size: 30px;
+  }
+}
