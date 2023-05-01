@@ -94,39 +94,54 @@ function validateDni(dni) {
     dniError.textContent = "";
     inputDni.classList.add("correctBorder");
   }
-/***********Birthdate Validation: *****************/
+/***********Birth date Validation: *****************/
 var dateInput = document.getElementById("bDate");
 var dateError = document.createElement("div");
 dateInput.addEventListener("blur", function() {
-  function validateDate(num, min, max, acceptedChars) {
-    for (var i = 0; i < num.length; i++) {
-      if (acceptedChars.indexOf(num.charAt(i)) === -1) {
-        return false;
-      }
-    }
-    var value = parseInt(num, 10);
-    return !isNaN(value) && value >= min && value <= max;
-  }
-  var dateValue = dateInput.value;
-  var year = dateValue.substring(0, 4);
-  var month = dateValue.substring(5, 7);
-  var day = dateValue.substring(8, 10);
-  var yyyy = validateDate(year, 1953, 2007, "0123456789");
-  var mm = validateDate(month, 1, 12, "0123456789");
-  var dd = validateDate(day, 1, 31, "0123456789");
-  if (yyyy && mm && dd) {
-    dateError.textContent = "";
-    return true;
-  } else {
-    dateError.textContent = "Invalid. Please enter a valid date of birth.";
+  validateDate(dateInput.value);
+})
+function validateDate() {
+  var parts = dateInput.value.split('/');
+  if (parts.length !== 3) {
+    dateError.textContent = "the birth date format is dd/mm/aaaa";
     dateError.classList.add("errorBorder");
+    dateInput.parentNode.insertBefore(dateError, dateInput.nextSibling);
     return false;
   }
-});
-dateInput.addEventListener("focus", function() {
-  dateError.textContent = "";
+  var dd = parseInt(parts[0], 10);
+  var mm = parseInt(parts[1], 10);
+  var yyyy = parseInt(parts[2], 10);
+  if (isNaN(dd) || isNaN(mm) || isNaN(yyyy)) {
+    dateError.textContent = "the birth date format is dd/mm/aaaa";
+    dateError.classList.add("errorBorder");
+    dateInput.parentNode.insertBefore(dateError, dateInput.nextSibling);
+    return false;
+  }
+  if (dd < 1 || dd > 31 || mm < 1 || mm > 12) {
+    dateError.textContent = "the birth date need to be a valid date";
+    dateError.classList.add("errorBorder");
+    dateInput.parentNode.insertBefore(dateError, dateInput.nextSibling);
+    return false;
+  }
+  var currentDate = new Date();
+  var currentYear = currentDate.getFullYear();
+  var age = currentYear - yyyy;
+  var minAge = 16;
+  var maxAge = 70;
+  if (age < minAge || age > maxAge) {
+    dateError.textContent = "You are out of range.";
+    dateError.classList.add("errorBorder");
+    dateInput.parentNode.insertBefore(dateError, dateInput.nextSibling);
+    return false;
+  } else {
+    dateError.textContent = "";
+    return true;
+  }
+}
+dateInput.onfocus = function () {
   dateError.classList.remove("errorBorder");
-});
+  dateError.textContent = "";
+}
 /***********Telephone Validation: *****************/
 var inputTel = document.getElementById("tel");
 var telError = document.createElement("div");
@@ -342,16 +357,41 @@ var repeatPassword = inputRepeat.value;
 /***********Button: *****************/
 var registerButton = document.getElementById("buttonRegister");
 registerButton.addEventListener("click", function() {
-    alert('the entered data is: '+
-            'Name: ' + inputName.value + ' ' +
-            'Last name: ' + inputLname.value + ' ' +
-            'Dni: ' + inputDni.value + ' ' +
-            'Birth date: ' + dateInput.value + ' ' +
-            'Telephone: ' + inputTel.value + ' ' +
-            'Address: ' + inputAddress.value + ' ' +
-            'Location: ' + inputLocation.value + ' ' +
-            'Postal code: ' + postalCodeInput .value + ' ' +
-            'Email: ' + inputEmail.value + ' ' +
-            'Password: ' + inputPassword.value + ' ' +
-            'Password repeat: ' + inputRepeat.value);
+  if ((inputName.length !== 0) &&
+(inputLname.length !== 0) &&
+(inputDni.length !== 0) &&
+(dateInput.length !== 0) &&
+(inputTel.length !== 0) &&
+(inputAddress.length !== 0) &&
+(inputLocation.length !== 0) &&
+(postalCodeInput .length !== 0) &&
+(inputEmail.length !== 0) &&
+(inputPassword.length !== 0) &&
+(inputRepeat.length !== 0))
+    if  ((nameError.textContent == "")&&
+        (lnameError.textContent == "")&&
+        (dniError.textContent == "")&&
+        (dateError.textContent == "")&&
+        (telError.textContent == "")&&
+        (locationError.textContent == "")&&
+        (postalCodeError.textContent == "")&&
+        (addressError.textContent == "")&&
+        (emailError.textContent == "")&&
+        (passwordError.textContent == "")&&
+        (repeatError.textContent == "")){
+          alert('the entered data is: '+
+                  'Name: ' + inputName.value + ' ' +
+                  'Last name: ' + inputLname.value + ' ' +
+                  'Dni: ' + inputDni.value + ' ' +
+                  'Birth date: ' + dateInput.value + ' ' +
+                  'Telephone: ' + inputTel.value + ' ' +
+                  'Address: ' + inputAddress.value + ' ' +
+                  'Location: ' + inputLocation.value + ' ' +
+                  'Postal code: ' + postalCodeInput .value + ' ' +
+                  'Email: ' + inputEmail.value + ' ' +
+                  'Password: ' + inputPassword.value + ' ' +
+                  'Password repeat: ' + inputRepeat.value);
+} else {
+  alert ('Error. Please check the information, you may have some invalid field or an empty one and all fields are required')
+}
 })
