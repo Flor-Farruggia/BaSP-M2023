@@ -20,6 +20,7 @@ function validateName(name) {
   }
   if (validName && name.length >= 3) {
     nameError.textContent = "";
+    savedName = inputName.value;
     return true;
   } else {
     nameError.textContent = "Invalid. Must contains only letters and at least 3 characters.";
@@ -52,6 +53,7 @@ function validateLastName(lname) {
   }
   if (validLname && lname.length >= 3) {
     lnameError.textContent = "";
+    savedLastName = inputLname.value;
     return true;
   } else {
     lnameError.textContent = "Invalid. Must contains only letters and at least 3.";
@@ -83,8 +85,8 @@ function validateDni(dni) {
   }
   if (validDni && dni.length >= 8) {
     dniError.textContent = "";
-    inputDni.classList.remove("errorBorder");
-    inputDni.classList.add("correctBorder");
+    dniError.classList.remove("errorBorder");
+    savedDni = inputDni.value;
     return true;
   } else {
     dniError.textContent = "Invalid. Only numbers and 8.";
@@ -96,7 +98,6 @@ function validateDni(dni) {
   inputDni.onfocus = function () {
     dniError.classList.remove("errorBorder");
     dniError.textContent = "";
-    inputDni.classList.add("correctBorder");
   }
 /***********Birth date Validation: *****************/
 var dateInput = document.getElementById("bDate");
@@ -107,16 +108,16 @@ dateInput.addEventListener("blur", function() {
 function validateDate() {
   var parts = dateInput.value.split('/');
   if (parts.length !== 3) {
-    dateError.textContent = "the birth date format is dd/mm/aaaa";
+    dateError.textContent = "the birth date format is mm/dd/aaaa";
     dateError.classList.add("errorBorder");
     dateInput.parentNode.insertBefore(dateError, dateInput.nextSibling);
     return false;
   }
-  var dd = parseInt(parts[0], 10);
-  var mm = parseInt(parts[1], 10);
+  var mm = parseInt(parts[0], 10);
+  var dd = parseInt(parts[1], 10);
   var yyyy = parseInt(parts[2], 10);
   if (isNaN(dd) || isNaN(mm) || isNaN(yyyy)) {
-    dateError.textContent = "the birth date format is dd/mm/aaaa";
+    dateError.textContent = "the birth date format is mm/dd/aaaa";
     dateError.classList.add("errorBorder");
     dateInput.parentNode.insertBefore(dateError, dateInput.nextSibling);
     return false;
@@ -139,6 +140,7 @@ function validateDate() {
     return false;
   } else {
     dateError.textContent = "";
+    savedDate =dateInput.value;
     return true;
   }
 }
@@ -166,6 +168,7 @@ function validateTel(tel) {
         }
     }    if (isValid) {
         telError.textContent = "";
+        savedTel=inputTel.value;
         return true;
     } else {
         telError.textContent ="Invalid. Must contain just numbers and just 10.";
@@ -201,6 +204,7 @@ function valLocation(location) {
   }
   if (isValid) {
     locationError.textContent = "";
+    savedLocation = inputLocation.value;
     return true;
   } else {
     locationError.textContent = "Invalid. Must have at least 3 alphanumeric character";
@@ -219,6 +223,7 @@ var postalCodeInput = document.getElementById("postalCode");
 postalCodeInput.addEventListener("blur", function () {
   var postalCode = postalCodeInput.value;
   if (!isNaN(postalCode) && postalCode.length >= 4 && postalCode.length <= 5) {
+      savedPostalCode=postalCodeInput.value;
       return true;
     } else {
       postalCodeError.classList.add("errorBorder");
@@ -261,6 +266,7 @@ function validateAddress(address) {
   }
   if (letterYes && numberYes && spaceYes && address.length >= 5) {
     addressError.textContent = "";
+    savedAddress = inputAddress.value;
     return true;
   } else {
     addressError.textContent = "Invalid Address. Must contain at least 5 characters, with numbers, letters and a space between them";
@@ -284,11 +290,12 @@ function valEmail(email) {
     if (emailRegex.test(email)) {
       emailError.textContent = "";
       inputEmail.classList.add("correctBorder");
+      savedEmail= inputEmail.value;
       return true;
     } else {
       emailError.textContent = "Invalid. Must be with a valid format.";
       emailError.classList.add("errorBorder");
-      inputEmail.parentNode.insertBefore(emailError, inputEmail.nextSibling);  
+      inputEmail.parentNode.insertBefore(emailError, inputEmail.nextSibling);
       return false;
     }
   }
@@ -329,6 +336,7 @@ inputPassword.onblur = function () {
     }
     if (capitalLetter && smallLetter && NumberChar && password.length >=5 ) {
         passwordError.textContent = "";
+        savedPassword = inputPassword.value;
         return true;
     }
     };
@@ -340,7 +348,6 @@ inputPassword.onblur = function () {
 /***********repeat Validation: *****************/
 var inputRepeat = document.getElementById("repeatPassword");
 var repeatError = document.createElement("div");
-var repeatPassword = inputRepeat.value;
 
   inputRepeat.onblur = function () {
     var repeatPassword = inputRepeat.value;
@@ -360,46 +367,86 @@ var repeatPassword = inputRepeat.value;
   };
 /***********Button: *****************/
 var registerButton = document.getElementById("buttonRegister");
-registerButton.addEventListener("click", function() {
-  if ((inputName.length !== 0) &&
-(inputLname.length !== 0) &&
-(inputDni.length !== 0) &&
-(dateInput.length !== 0) &&
-(inputTel.length !== 0) &&
-(inputAddress.length !== 0) &&
-(inputLocation.length !== 0) &&
-(postalCodeInput .length !== 0) &&
-(inputEmail.length !== 0) &&
-(inputPassword.length !== 0) &&
-(inputRepeat.length !== 0))
-    if  ((nameError.textContent == "")&&
-        (lnameError.textContent == "")&&
-        (dniError.textContent == "")&&
-        (dateError.textContent == "")&&
-        (telError.textContent == "")&&
-        (locationError.textContent == "")&&
-        (postalCodeError.textContent == "")&&
-        (addressError.textContent == "")&&
-        (emailError.textContent == "")&&
-        (passwordError.textContent == "")&&
-        (repeatError.textContent == "")){
-          alert('the entered data is: '+
-                  'Name: ' + inputName.value + ' ' +
-                  'Last name: ' + inputLname.value + ' ' +
-                  'Dni: ' + inputDni.value + ' ' +
-                  'Birth date: ' + dateInput.value + ' ' +
-                  'Telephone: ' + inputTel.value + ' ' +
-                  'Address: ' + inputAddress.value + ' ' +
-                  'Location: ' + inputLocation.value + ' ' +
-                  'Postal code: ' + postalCodeInput .value + ' ' +
-                  'Email: ' + inputEmail.value + ' ' +
-                  'Password: ' + inputPassword.value + ' ' +
-                  'Password repeat: ' + inputRepeat.value);
-} else {
-  alert ('Error. Please check the information, you may have some invalid field or an empty one and all fields are required')
-}
-})
+registerButton.addEventListener('click', validateReg);
 
-
-
-}
+ function validateReg () {
+  if ((inputName.length !== 0) && (inputLname.length !== 0) && (inputDni.length !== 0) &&
+    (dateInput.length !== 0) && (inputTel.length !== 0) && (inputAddress.length !== 0) &&
+    (inputLocation.length !== 0) && (postalCodeInput .length !== 0) && (inputEmail.length !== 0) &&
+    (inputPassword.length !== 0) && (inputRepeat.length !== 0))
+        if  ((nameError.textContent == "")&& (lnameError.textContent == "")&& (dniError.textContent == "")&&
+            (dateError.textContent == "")&& (telError.textContent == "")&& (locationError.textContent == "")&&
+            (postalCodeError.textContent == "")&& (addressError.textContent == "")&& (emailError.textContent == "")&&
+            (passwordError.textContent == "")&& (repeatError.textContent == "")){
+              alert('the entered data is: '+
+                      'Name: ' + inputName.value + ' ' +
+                      'Last name: ' + inputLname.value + ' ' +
+                      'Dni: ' + inputDni.value + ' ' +
+                      'Birth date: ' + dateInput.value + ' ' +
+                      'Telephone: ' + inputTel.value + ' ' +
+                      'Address: ' + inputAddress.value + ' ' +
+                      'Location: ' + inputLocation.value + ' ' +
+                      'Postal code: ' + postalCodeInput .value + ' ' +
+                      'Email: ' + inputEmail.value + ' ' +
+                      'Password: ' + inputPassword.value + ' ' +
+                      'Password repeat: ' + inputRepeat.value);
+                      dataInfo ();
+    } else {
+      alert ('Error. Please check the information, you may have some invalid field or an empty one and all fields are required')
+    }
+    }
+    function dataInfo() {
+      var data = {
+        name: inputName.value,
+        lastName: inputLname.value,
+        dni: inputDni.value,
+        dob: dateInput.value,
+        phone: inputTel.value,
+        address: inputAddress.value,
+        city: inputLocation.value,
+        zip: postalCodeInput.value,
+        email: inputEmail.value,
+        password: inputPassword.value
+      };
+      var searchParams = new URLSearchParams(data);
+      var url = 'https://api-rest-server.vercel.app/signup?' + searchParams.toString();
+      fetch(url)
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          } else {
+            return response.json().then(function(error){
+              throw new Error (error);
+            });
+          }
+        })
+        .then(function (data) {
+          if (data.success === false) {
+            throw new Error('registration failed');
+          } else {
+            var message = "Employee created:\n";
+            localStorage.setItem('data', JSON.stringify(data));
+            alert(message);
+          }
+        })
+        .catch(function (error) {
+          var errorObj = JSON(error.message);
+          var msg = errorObj.error;
+          alert('Error');
+        });
+      }}
+    var savedData = localStorage.getItem('data');
+    if (savedData !== null) {
+      var data = JSON.parse(savedData);
+      inputName.value= data.name;
+      inputLname.value= data.lastName;
+      inputDni.value= data.dni;
+      dateInput.value= data.birthdate;
+      inputTel.value= data.phoneNumber;
+      inputAddress.value= data.adress;
+      inputLocation.value= data.city;
+      postalCodeInput.value= data.zipCode;
+      inputEmail.value= data.email;
+      inputPassword.value= data.password;
+      inputRepeat.value= data.password;
+    }

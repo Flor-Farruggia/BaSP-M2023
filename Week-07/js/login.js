@@ -75,22 +75,33 @@ loginButton.addEventListener("click", function() {
     var passwordErrorText = passwordError.textContent.trim();
     if (email.length !== 0 && password.length !== 0 && emailErrorText === "" && passwordErrorText === "") {
         alert("Email: " + email + "\n" + "Password: " + password);
-                var queryParams = '?email=$' + inputEmail.value + '&password=$' + inputPassword.value;
-                var url = 'https://api-rest-server.vercel.app/login' + queryParams;
-                fetch(url)
-                .then (function(response) {
-                    return response.json ();
-                })
-                .then (function(success) {
-                    alert ('Welcome');
-                    alert (success);
-                })
-                .catch (function(errors) {
-                    alert ('Error');
-                    return alert (errors);
-                });
+        checkUser ();
             } else {
         alert("E-mail or password invalid.");
       }
     })
+    function checkUser (){
+        fetch('https://api-rest-server.vercel.app/login?email=rose@radiumrocket.com&password=BaSProfessional1')
+        .then (function(response) {
+            return response.json ();
+        })
+        .then (function(success) {
+            alert ('Welcome');
+            alert (success);
+        })
+        .catch (function(errors) {
+            alert ('Error');
+            return alert (errors);
+        });
+    }
+    var data = {
+        email: inputEmail.value,
+        password: inputPassword.value
+    }
+    var savedData = localStorage.getItem('data');
+    if (savedData !== null) {
+      var data = JSON.parse(savedData);
+      inputEmail.value= data.email;
+      inputPassword.value= data.password;
+    }
 }
