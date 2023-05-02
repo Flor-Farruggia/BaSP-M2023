@@ -1,3 +1,7 @@
+window.onload = function () {
+    document.getElementById("homeIcon").addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
 /*************Email****************/
 var emailError = document.createElement("div");
 var inputEmail = document.getElementById("email");
@@ -65,19 +69,28 @@ inputPassword.onblur = function () {
 var loginButton = document.getElementById("loginButton");
 
 loginButton.addEventListener("click", function() {
-    if ((inputEmail.value.trim().length !== 0) && (inputPassword.value.trim().length !== 0)) {
-        if ((emailError.textContent  == "") && ( passwordError.textContent == "")) {
-            alert("Email: " + inputEmail.value + "\n" + "Password: " + inputPassword.value)
-        } else {
-            if ((emailError.textContent !== "") && ( passwordError.textContent !== "")){
-                alert("* Email and Password invalid")
-            }else if (emailError.textContent !== ""){
-                alert("* Email invalid")
-            }else if ( passwordError.textContent !== ""){
-                alert("* Password invalid")
-            }
-        }
-    }else{
-        alert("* Please complete all the fields")
-    }
-});
+    var email = inputEmail.value.trim();
+    var password = inputPassword.value.trim();
+    var emailErrorText = emailError.textContent.trim();
+    var passwordErrorText = passwordError.textContent.trim();
+    if (email.length !== 0 && password.length !== 0 && emailErrorText === "" && passwordErrorText === "") {
+        alert("Email: " + email + "\n" + "Password: " + password);
+                var queryParams = '?email=$' + inputEmail.value + '&password=$' + inputPassword.value;
+                var url = 'https://api-rest-server.vercel.app/login' + queryParams;
+                fetch(url)
+                .then (function(response) {
+                    return response.json ();
+                })
+                .then (function(success) {
+                    alert ('Welcome');
+                    alert (success);
+                })
+                .catch (function(errors) {
+                    alert ('Error');
+                    return alert (errors);
+                });
+            } else {
+        alert("E-mail or password invalid.");
+      }
+    })
+}

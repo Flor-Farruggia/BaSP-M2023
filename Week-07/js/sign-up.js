@@ -1,3 +1,7 @@
+window.onload = function () {
+  document.getElementById("homeIcon").addEventListener("click", function () {
+      window.location.href = "index.html";
+  });
 /***********Name Validation: *****************/
 var inputName = document.getElementById("name");
 var nameError = document.createElement("div");
@@ -395,3 +399,7 @@ registerButton.addEventListener("click", function() {
   alert ('Error. Please check the information, you may have some invalid field or an empty one and all fields are required')
 }
 })
+
+
+
+}
