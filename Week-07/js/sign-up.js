@@ -23,7 +23,7 @@ function validateName(name) {
     savedName = inputName.value;
     return true;
   } else {
-    nameError.textContent = "Invalid. Must contains only letters and at least 3 characters.";
+    nameError.textContent = "Invalid. Must contains only letters.";
     nameError.classList.add("errorBorder");
     inputName.parentNode.insertBefore(nameError, inputName.nextSibling);
     return false;
@@ -56,7 +56,7 @@ function validateLastName(lname) {
     savedLastName = inputLname.value;
     return true;
   } else {
-    lnameError.textContent = "Invalid. Must contains only letters and at least 3.";
+    lnameError.textContent = "Invalid. Must contains only letters.";
     lnameError.classList.add("errorBorder");
     inputLname.parentNode.insertBefore(lnameError, inputLname.nextSibling);
     return false;
@@ -171,7 +171,7 @@ function validateTel(tel) {
         savedTel=inputTel.value;
         return true;
     } else {
-        telError.textContent ="Invalid. Must contain just numbers and just 10.";
+        telError.textContent ="Invalid. Must contain just ten numbers.";
         telError.classList.add("errorBorder");
         inputTel.parentNode.insertBefore(telError, inputTel.nextSibling);
         return false;
@@ -207,7 +207,7 @@ function valLocation(location) {
     savedLocation = inputLocation.value;
     return true;
   } else {
-    locationError.textContent = "Invalid. Must have at least 3 alphanumeric character";
+    locationError.textContent = "Invalid. At least 3 alphanumeric character";
     locationError.classList.add("errorBorder");
     inputLocation.parentNode.insertBefore(locationError, inputLocation.nextSibling);
     return false;
@@ -249,7 +249,7 @@ function validateAddress(address) {
   var spaceYes = false;
 
   if (address.length < 5) {
-    addressError.textContent = "Invalid. Must contain at least 5 characters";
+    addressError.textContent = "Invalid. At least 5 characters";
     addressError.classList.add("errorBorder");
     inputAddress.parentNode.insertBefore(addressError, inputAddress.nextSibling);
     return false;
@@ -269,7 +269,7 @@ function validateAddress(address) {
     savedAddress = inputAddress.value;
     return true;
   } else {
-    addressError.textContent = "Invalid Address. Must contain at least 5 characters, with numbers, letters and a space between them";
+    addressError.textContent = "Invalid. 5 characters numbers, letters and space.";
     addressError.classList.add("errorBorder");
     inputAddress.parentNode.insertBefore(addressError, inputAddress.nextSibling);
     return false;
@@ -323,13 +323,13 @@ inputPassword.onblur = function () {
         }
     }
     if (!capitalLetter || !smallLetter || !NumberChar) {
-        passwordError.textContent ="Invalid. Must contain at least one capital letter, one lowercase and one number.";
+        passwordError.textContent ="Invalid. At least one capital letter, one lowercase and one number.";
         passwordError.classList.add("errorBorder");
         inputPassword.parentNode.insertBefore(passwordError, inputPassword.nextSibling);
         return false;
     }
     if (password.length < 5) {
-        passwordError.textContent ="Invalid Password. You need at least 8 characters (one capital letter, one lowercase and one number)";
+        passwordError.textContent ="Invalid. At least 8 characters";
         passwordError.classList.add("errorBorder");
         inputPassword.parentNode.insertBefore(passwordError, inputPassword.nextSibling);
         return false;

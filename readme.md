@@ -30,7 +30,7 @@ This week we learn about css in order to put style in the html document, we work
 ***
 In this stage what we do with css was to create the style of the pages witch mean that we add some global parameters such as width or the font of the page, then we add some general specification that we organized this parts in classes or id that we incorporated in the html document, in orde to give to this partss background-color or font color. We were able to give a font, colors, borders and even arrange in columns or add space between the differents containers and adapt the images to the size that is most convenient.
 
-Basically with the work of the second week we were able to create the base structure por the landing page, with this past week we were able to added style that is what will attract people to stay in the page and enjoy it. 
+Basically with the work of the second week we were able to create the base structure por the landing page, with this past week we were able to added style that is what will attract people to stay in the page and enjoy it.
 ***
 ## **Fourth Week Working:**
 ***
@@ -47,6 +47,12 @@ This week we learn about the different programming languages, we focused on Java
 During this week we were learning about what is the DOM (acronyms refer to Document Object Model) we saw the different ways to select elements so that we could create validations and events, Knowledge that will make our resolution of the problematic easier.
 ## **Page content:**
 At this point we have a landing page that contains style and structure with css and html, so the idea of this week's work was to add two pages to which we can connect the index, being the login and sign up The next step in the problematic was to create these pages interactively, so that you could go from one page to another and back, in the same way with the forms in which the user is able to enter their data and through a series of validations the inputs will remain green if they are valid or red in case of being invalid, the validity of these will be based on a series of parameters that have been added to a pdf document of 'Requirements' and the validation itself is done in the javascript docs.
+***
+## **Seventh Week of Work:**
+***
+This week we learned about several things like how work the architecture of server-client, also the difference between a static server and a dynamic one, we also saw the concept of asynchronism in JavaScript and about the promises and callbacks, also the differents ways that we have to storage the information such as localStorage or sessionStorage and about cookies, this way we were able to send data through our forms.
+## **Page content:**
+Last week we created two forms, one the registration of a new user and the other one was a login for a user with an account. So for this week in base of what we learn we were able to use that information to create the user and now we were able to store that data in order to preserve the user information even when we reload the page in the case of the sign up form in the localStorage.
 ***
 ## **Author:**
 Farruggia Florencia.
