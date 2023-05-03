@@ -28,13 +28,13 @@ At the end of the body i put the footer which contains the paragraph about copyr
 This week we learn about css in order to put style in the html document, we work with the objective that the page stay in some measure parameters which mean that the design shouldn't be responsive, only in pixel perfect; but even if we focus in the css we also had to make changes in the html documentation. Just like in the last week we work with the support of pages like [w3schools](https://www.w3schools.com/html/default.asp) and [developer.mozilla](https://developer.mozilla.org/es/).
 ## **Page content:**
 ***
-In this stage what we do with css was to create the style of the pages witch mean that we add some global parameters such as width or the font of the page, then we add some general specification that we organized this parts in classes or id that we incorporated in the html document, in orde to give to this partss background-color or font color. We were able to give a font, colors, borders and even arrange in columns or add space between the differents containers and adapt the images to the size that is most convenient.
+In this stage what we do with css was to create the style of the pages witch mean that we add some global parameters such as width or the font of the page, then we add some general specification that we organized this parts in classes or id that we incorporated in the html document, in orde to give to this parts background-color or font color. We were able to give a font, colors, borders and even arrange in columns or add space between the differents containers and adapt the images to the size that is most convenient.
 
 Basically with the work of the second week we were able to create the base structure por the landing page, with this past week we were able to added style that is what will attract people to stay in the page and enjoy it.
 ***
 ## **Fourth Week Working:**
 ***
-This week we learn about responsive develop using tools like flexbox and media queries. First we had flexbox which is used for organized the components and containers, secondlywe had the media queries that are used to change the propoerties of the components when in the moment you change the size of the device you are using. Just like in the other weeks we work with the support of pages and the material.
+This week we learn about responsive develop using tools like flexbox and media queries. First we had flexbox which is used for organized the components and containers, secondly we had the media queries that are used to change the properties of the components when in the moment you change the size of the device you are using. Just like in the other weeks we work with the support of pages and the material.
 ## **page content:**
 In this moment what we acomplish to created a website who is responsive to different measures, we try to keep the most similar design from the original in figma and we stablish a start point from the model of mobile first, then we were adding the difference with the media queries.
 ***
@@ -42,7 +42,7 @@ In this moment what we acomplish to created a website who is responsive to diffe
 ***
 This week we learn about the different programming languages, we focused on JavaScript which is a lightly typed language, we were given a series of exercises to put into practice the knowledge acquired from the material. The exercises were divided into six sections, these were developed in six js files indexed to an empty html document, first the exercise about variables and operators, the second exercise was about strings, the third about arrays, the fourth about the if-else loop, the fifth about for loop and the sixth was about functions. Like in the past weeks we worked with the videos provided in the asynchronous material. And for other side we continue the changes in the css document with the correction of the feedback, trying to perfect and fix the page.
 ***
-## **sixth week of work:**
+## **Sixth week of work:**
 ***
 During this week we were learning about what is the DOM (acronyms refer to Document Object Model) we saw the different ways to select elements so that we could create validations and events, Knowledge that will make our resolution of the problematic easier.
 ## **Page content:**
@@ -53,6 +53,7 @@ At this point we have a landing page that contains style and structure with css 
 This week we learned about several things like how work the architecture of server-client, also the difference between a static server and a dynamic one, we also saw the concept of asynchronism in JavaScript and about the promises and callbacks, also the differents ways that we have to storage the information such as localStorage or sessionStorage and about cookies, this way we were able to send data through our forms.
 ## **Page content:**
 Last week we created two forms, one the registration of a new user and the other one was a login for a user with an account. So for this week in base of what we learn we were able to use that information to create the user and now we were able to store that data in order to preserve the user information even when we reload the page in the case of the sign up form in the localStorage.
+Now this is the link to the index in github page for this week: [Week-07/index](https://flor-farruggia.github.io/BaSP-M2023/Week-07/views/)
 ***
 ## **Author:**
 Farruggia Florencia.
